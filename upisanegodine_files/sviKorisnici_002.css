@@ -1,0 +1,19 @@
+dl { margin: 10px; }
+dt { margin-top: 10px; }
+dd { width: 500px; text-align: justify; }
+.invalid {
+	background-color: #ff7b7b;
+}
+
+th.counter, table.list tbody th.counter {
+	width: 1px;
+	text-align: right;
+}
+
+td.counter, table.list tbody tr td.counter {
+	text-align: right;
+}
+.invisible {display: none;}
+.visible {display: block;}
+
+*.help-text {font-size: 11px; font-style: italic; background-color: #eeeeee;}

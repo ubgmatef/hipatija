@@ -1,0 +1,98 @@
+/*****************************************************************************/
+/* "Normal" (non-IE) browsers */
+img.fit-width, img.large-picture-resized {
+	width: 100%;
+}
+
+/* IE */
+* html span.outer-img-span img.fit-width {
+	width: 1px;
+	width: expression(width < parentNode.clientWidth ? parentNode.clientWidth : true);
+}
+* html span.outer-img-span img.large-picture-resized {
+	width: 1px;
+	width: expression(width < parentNode.clientWidth - 2 ? parentNode.clientWidth - 2 : true);
+}
+
+/* MESSAGES */
+/************************************/
+div#app-messages {
+	margin-bottom: 10px;
+}
+
+div#app-messages span {
+	margin-bottom: 5px;
+	padding: 5px;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	display: block;
+}
+div#app-messages span a, div#app-messages span a.visited {
+	color: blue;
+}
+
+/* MESSAGES */
+span.congratulation {
+	color: #003399;
+	background: lavender;
+	border: 1px solid #555555;
+	font-size: 15px;
+}
+
+span.info {
+	color: white;
+	background: green;
+	border: 1px solid #555555;
+}
+
+span.warning {
+	color: black;
+	background: #FAD163;
+	border: 1px solid #888888;
+}
+
+span.error {
+	color: white;
+	background: red;
+	border: 1px solid #555555;
+}
+
+span.jisp {
+	color: white;
+	background: gray;
+	border: 1px solid #555555;
+}
+
+/* Combo box */
+optgroup.level1 { padding-left: 0px; }
+option.level1 { padding-left: 4px; }
+optgroup.level2 { padding-left: 6px; }
+option.level2 { padding-left: 13px; }
+optgroup.level3 { padding-left: 14px; }
+option.level3 { padding-left: 20px; }
+
+hr {
+	border-top: none;
+	border-left: none;
+	border-bottom: 1px dotted gray;
+	border-right: none;
+	color: white;
+}
+
+ul li {
+	list-style-type: disc;
+}
+
+table#reportId thead {
+	background-color: #004080;
+}
+
+table#reportId thead tr td span {
+	color: #FF0000;
+}
+
+a {
+	color: #0000FF;
+	border: none;
+}

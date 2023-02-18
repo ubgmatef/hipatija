@@ -1,0 +1,312 @@
+
+<!-- saved from url=(0043)file:///D:/Documents/Desktop/new/ispiti.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript">
+			var GlobalJSConfig =
+			{
+				context: '/StudInfo',
+				facultyId: '1',
+				faculty: 'matf',
+				indexRegexp: '^((\\d{1,4}(/|-)(\\d{4}|\\d{2}))|([A-Za-z]{2}\\d{5}))$',
+				cacheVersion: '2022-12'
+			};
+		</script><link href="./ispiti_files/osnovno_003.css" rel="stylesheet" type="text/css"><link href="./ispiti_files/osnovno_002.css" rel="stylesheet" type="text/css" media="screen"><link href="./ispiti_files/osnovno.css" rel="stylesheet" type="text/css" media="print"><link href="./ispiti_files/sviKorisnici_002.css" rel="stylesheet" type="text/css"><link href="./ispiti_files/sviKorisnici_003.css" rel="stylesheet" type="text/css" media="screen"><link href="./ispiti_files/sviKorisnici.css" rel="stylesheet" type="text/css" media="print"><link href="./ispiti_files/studenti.css" rel="stylesheet" type="text/css"><link href="./ispiti_files/studenti_002.css" rel="stylesheet" type="text/css" media="screen"><link href="./ispiti_files/studenti_003.css" rel="stylesheet" type="text/css" media="print"><link href="./ispiti_files/aplikacija.css" rel="stylesheet" type="text/css" media="print"><style type="text/css" media="screen">
+				td#cont {
+					background-image: url(/StudInfo/images/studenti/cont-bg.gif);
+					
+				}
+			</style><style type="text/css">
+			caption {
+				background-image: url(/StudInfo/images/studenti/caption-bg.gif);
+			}
+			table.list caption,
+			.caption {
+				background-image: url(/StudInfo/images/studenti/caption-bg.gif);
+			}
+			td#menu table tbody tr td {
+				background-image: url(/StudInfo/images/studenti/menuitem-bg.gif);
+			}
+			td#menu table tbody tr td a:hover {
+				background-image: url(/StudInfo/images/studenti/menu-arrow.gif);
+			}
+			div.submenu table tr td {
+				background-image: url(/StudInfo/images/studenti/submenuitem-bg.gif);
+			}
+			div.submenu table tr td a:hover {
+				background-image: url(/StudInfo/images/studenti/menu-arrow.gif);
+			}
+		</style><script type="text/javascript" src="./ispiti_files/jquery.js.преузимање"></script><script type="text/javascript" src="./ispiti_files/jquery-extend.js.преузимање"></script><script type="text/javascript" src="./ispiti_files/jquery.SI.js.преузимање"></script><script type="text/javascript" src="./ispiti_files/jquery.Table2CSV.js.преузимање"></script><script type="text/javascript" src="./ispiti_files/javascript.js.преузимање"></script><script type="text/javascript" src="./ispiti_files/controls.js.преузимање"></script><script type="text/javascript" src="./ispiti_files/menus.js.преузимање"></script><script type="text/javascript" src="./ispiti_files/Util.js.преузимање"></script><script type="text/javascript" src="./ispiti_files/Position.js.преузимање"></script><script type="text/javascript" src="./ispiti_files/Tooltip.js.преузимање"></script><script type="text/javascript" src="./ispiti_files/Report.js.преузимање"></script><script type="text/javascript">
+			<!--
+			function initCalendars() {
+				
+			}
+			//-->
+		</script><script type="text/javascript">
+			<!--
+			function initTBAutocomplete() {
+			
+			}
+			//-->
+		</script><script type="text/javascript" src="./ispiti_files/forms.js.преузимање"></script><script type="text/javascript">
+		function initFormValidation()
+		{
+			
+		}
+		</script><script type="text/javascript" src="./ispiti_files/jquery.cookie.js.преузимање"></script><script type="text/javascript" src="./ispiti_files/jquery.SessionControl.js.преузимање"></script><script type="text/javascript">
+					function initSessionControl() {
+						$.SessionControl(1800,
+							"/StudInfo/scripts/osveziSesiju");
+					}
+				</script><script type="text/javascript"></script><script type="text/javascript">
+			$(window).load(function(e){
+				
+				$("table.list").drawList();
+				
+				EXPORT_ICON = '/StudInfo/images/export.png';
+				$("table.list,table.exportable").Table2CSV_prepare("/StudInfo/file/", ["csvIgnore"], "not-exportable");
+				
+				
+				$(".submitlink").bind('click', function(e) {
+					if (e.which == 2)
+						return false;
+				});
+				
+				
+				$("table.object-edit").formatObjectEdit();
+
+				initCalendars();
+				initTBAutocomplete();
+				initFormValidation();
+				initSessionControl();
+				
+				
+					new Tooltip('tt-12128-sep2 -2021', '2021');
+				
+					new Tooltip('poeniTd_18782021_sep2 ', 'Предиспитне обавезе + усмени испит = укупно поена.');
+				
+					new Tooltip('tt-10924-jun1 -2020', '2020');
+				
+					new Tooltip('poeniTd_21662020_jun1 ', 'Предиспитне обавезе + усмени испит = укупно поена.');
+				
+					new Tooltip('tt-12398-sep2 -2021', '2021');
+				
+					new Tooltip('poeniTd_23572021_sep2 ', 'Предиспитне обавезе + писмени испит = укупно поена.');
+				
+					new Tooltip('tt-10930-sep1 -2020', '2020');
+				
+					new Tooltip('poeniTd_21692020_sep1 ', 'Предиспитне обавезе + писмени испит + усмени испит = укупно поена.');
+				
+					new Tooltip('tt-12361-sep1 -2021', '2021');
+				
+					new Tooltip('poeniTd_18772021_sep1 ', 'Предиспитне обавезе + усмени испит = укупно поена.');
+				
+					new Tooltip('tt-14416-janps-2023', '2023');
+				
+					new Tooltip('poeniTd_18812023_janps', 'Предиспитне обавезе + усмени испит = укупно поена.');
+				
+					new Tooltip('tt-14437-jan2 -2023', '2023');
+				
+					new Tooltip('poeniTd_18902023_jan2 ', 'Предиспитне обавезе + усмени испит = укупно поена.');
+				
+					new Tooltip('tt-13832-sep1 -2022', '2022');
+				
+					new Tooltip('poeniTd_23832022_sep1 ', 'Предиспитне обавезе + усмени испит = укупно поена.');
+				
+					new Tooltip('tt-10925-sep1 -2020', '2020');
+				
+					new Tooltip('poeniTd_21672020_sep1 ', 'Предиспитне обавезе + усмени испит = укупно поена.');
+				
+					new Tooltip('tt-10928-jan1 -2020', '2020');
+				
+					new Tooltip('poeniTd_15952020_jan1 ', 'Предиспитне обавезе + писмени испит = укупно поена.');
+				
+					new Tooltip('tt-10932-sep1 -2020', '2020');
+				
+					new Tooltip('poeniTd_16002020_sep1 ', 'Предиспитне обавезе + писмени испит = укупно поена.');
+				
+					new Tooltip('tt-10929-jan2 -2020', '2020');
+				
+					new Tooltip('poeniTd_21682020_jan2 ', 'Предиспитне обавезе + писмени испит + усмени испит = укупно поена.');
+				
+					new Tooltip('tt-12725-sep2 -2021', '2021');
+				
+					new Tooltip('poeniTd_23812021_sep2 ', 'Предиспитне обавезе + писмени испит + усмени испит = укупно поена.');
+				
+					new Tooltip('tt-10926-jan2 -2020', '2020');
+				
+					new Tooltip('poeniTd_15942020_jan2 ', 'Предиспитне обавезе + усмени испит = укупно поена.');
+				
+					new Tooltip('tt-12439-sep2 -2021', '2021');
+				
+					new Tooltip('poeniTd_18822021_sep2 ', 'Предиспитне обавезе + писмени испит + усмени испит = укупно поена.');
+				
+					new Tooltip('tt-12533-jun2 -2021', '2021');
+				
+					new Tooltip('poeniTd_23582021_jun2 ', 'Предиспитне обавезе + усмени испит = укупно поена.');
+				
+					new Tooltip('tt-12727-sep2 -2021', '2021');
+				
+					new Tooltip('poeniTd_23822021_sep2 ', 'Предиспитне обавезе + писмени испит = укупно поена.');
+				
+				 
+				$.SI.Form.focusFirst();
+				
+				$.cookie('vremeOsvezavanja', new Date().getTime(), { path: '/' });
+						
+			});
+		</script><link rel="icon" type="image/png" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon-192x192.png" sizes="192x192"><link rel="apple-touch-icon" sizes="180x180" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon-apple-touch-icon.png"><link rel="shortcut icon" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon.ico"><link rel="mask-icon" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/manifest.webmanifest"><title>Преглед полагања испита</title></head>
+	<body><div id="sm3" class="submenu" onmouseover="showMenu(&#39;m3&#39;, &#39;sm3&#39;)" onmouseout="hideMenu(&#39;sm3&#39;)"><table><tbody><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/prijavaIspitaFormular">Пријављивање испита</a></td></tr><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/prijavljeniIspiti">Преглед полагања</a></td></tr><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/polozeniIspiti">Положени испити</a></td></tr></tbody></table></div><div id="sm15" class="submenu" onmouseover="showMenu(&#39;m15&#39;, &#39;sm15&#39;)" onmouseout="hideMenu(&#39;sm15&#39;)" style="display: none; top: 597px; left: 130px;"><table><tbody><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/odjavljivanje" onclick="return(confirm(&#39;Да ли заиста желите да се одјавите?&#39;));">Одјављивање</a></td></tr><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/spisakPrijavljivanja">Списак пријављивања</a></td></tr></tbody></table></div><table style="height: 100%;"><tbody><tr><td id="left"><table id="left-table"><tbody><tr><td style="text-align: center; padding: 5px; font-weight: bold;">Универзитет у Београду - Математички факултет</td></tr><tr><td id="logo"><div class="logo"><img id="grb" src="./ispiti_files/grb.gif"></div></td></tr><tr><td style="font-weight: bold; text-align: left; padding: 0 10px 5px 10px;">Душан Гарић<br>20/2019</td></tr><tr><td id="menu"><table><tbody><tr><td><a id="m1" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/" onmouseover="showMenu(&#39;m1&#39;, &#39;sm1&#39;)" onmouseout="hideMenu(&#39;sm1&#39;)">Прва страна</a></td></tr><tr><td><a id="m2" href="file:///D:/Documents/Desktop/new/kursigrupe1.htm" onmouseover="showMenu(&#39;m2&#39;, &#39;sm2&#39;)" onmouseout="hideMenu(&#39;sm2&#39;)">Курсеви и групе</a></td></tr><tr><td><a id="m3" href="file:///D:/Documents/Desktop/new/ispiti.htm" onmouseover="showMenu(&#39;m3&#39;, &#39;sm3&#39;)" onmouseout="hideMenu(&#39;sm3&#39;)">Испити</a></td></tr><tr><td><a id="m4" href="file:///D:/Documents/Desktop/new/financije.htm" onmouseover="showMenu(&#39;m4&#39;, &#39;sm4&#39;)" onmouseout="hideMenu(&#39;sm4&#39;)">Финансије</a></td></tr><tr><td><a id="m5" href="file:///D:/Documents/Desktop/new/upisanegodine.htm" onmouseover="showMenu(&#39;m5&#39;, &#39;sm5&#39;)" onmouseout="hideMenu(&#39;sm5&#39;)">Уписане године</a></td></tr><tr><td><a id="m6" href="file:///D:/Documents/Desktop/new/izborpred.htm" onmouseover="showMenu(&#39;m6&#39;, &#39;sm6&#39;)" onmouseout="hideMenu(&#39;sm6&#39;)">Избор предмета</a></td></tr><tr><td><a id="m7" href="file:///D:/Documents/Desktop/new/upisgodine.htm" onmouseover="showMenu(&#39;m7&#39;, &#39;sm7&#39;)" onmouseout="hideMenu(&#39;sm7&#39;)">Упис године</a></td></tr><tr><td style="padding: 0px 0px 0px 0px;"><div class="menu-separator"></div></td></tr><tr><td><a id="m9" href="file:///D:/Documents/Desktop/new/molbe.htm" onmouseover="showMenu(&#39;m9&#39;, &#39;sm9&#39;)" onmouseout="hideMenu(&#39;sm9&#39;)">Молбе</a></td></tr><tr><td><a id="m10" href="file:///D:/Documents/Desktop/new/licnipodaci.htm" onmouseover="showMenu(&#39;m10&#39;, &#39;sm10&#39;)" onmouseout="hideMenu(&#39;sm10&#39;)">Лични подаци</a></td></tr><tr><td><a id="m11" href="file:///D:/Documents/Desktop/new/uputstvo.htm" onmouseover="showMenu(&#39;m11&#39;, &#39;sm11&#39;)" onmouseout="hideMenu(&#39;sm11&#39;)" target="_blank">Упутство</a></td></tr><tr><td style="padding: 0px 0px 0px 0px;"><div class="menu-separator"></div></td></tr><tr><td><a id="m13" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/#" onmouseover="showMenu(&#39;m13&#39;, &#39;sm13&#39;)" onmouseout="hideMenu(&#39;sm13&#39;)" onclick="print(); return false;">Штампај</a></td></tr><tr><td style="padding: 0px 0px 0px 0px;"><div class="menu-separator"></div></td></tr><tr><td><a id="m15" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/odjavljivanje" onmouseover="showMenu(&#39;m15&#39;, &#39;sm15&#39;)" onmouseout="hideMenu(&#39;sm15&#39;)" onclick="return(confirm(&#39;Да ли заиста желите да се одјавите?&#39;));">Кориснички налог</a></td></tr></tbody></table></td></tr><tr><td id="left-footer"></td></tr></tbody></table></td><td id="cont"><a name="vrh" id="vrh"></a><h1>Активности у последњих 30 дана</h1><div class="page-date-and-time">18. фебруар 2023. 02:19</div><p>
+<input name="form-recovery-name" type="hidden" value="formSearch"><table class="form-table"><tbody><tr class="form-table"><td class="form-table"><label>Испитни рок <select name="ispitniRok" onchange="submitForm(this.form)">
+<option value="-nullObject-" selected="selected">Сви</option><optgroup label="Школска 2022/2023."><option value="god-2022">Сви из 2022/2023.</option><option value="H4sIAAAAAAAAAFvzloG1uIhBNjexJE2vuKQ0JTMvLV8vJUnPs7ggsyQvMyg_2zNFPO523i3GjBVMDMzBDGzp-UBFiT4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MbPlVeYnZQGkhJOngkqLMvHTrigL250CrBUESeiAJPag-oUcLlnxvbLdgYmD0ZGAtS8wpTa0oYhBAqPMrzU1KLWpbM1WWe8qDbiYGhooCBgYGxhIG1qzEPCMFAHSu2jDUAAAA">Јануар2 2023</option><option value="H4sIAAAAAAAAAFvzloG1uIhBNjexJE2vuKQ0JTMvLV8vJUnPs7ggsyQvMyg_2zNFPO523i3GjBVMDMzBDGzp-UBFiT4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MbPlVeYnZQGkhJOngkqLMvHTrigL250CrBUESeiAJPag-oUcLlnxvbLdgYmD0ZGAtS8wpTa0oYhBAqPMrzU1KLWpbM1WWe8qDbiYGhooCBgYGxhIG1qzEvIJiAL2D9wDUAAAA">Јануар1-ПС 2023*</option></optgroup><optgroup label="Школска 2021/2022."><option value="god-2021">Сви из 2021/2022.</option><option value="H4sIAAAAAAAAAFvzloG1uIhBNjexJE2vuKQ0JTMvLV8vJUnPs7ggsyQvMyg_2zNFPO523i3GjBVMDMzBDGzp-UBFiT4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MbPlVeYnZQGkhJOngkqLMvHTrigL2Z0CrBUESeiAJPag-oUcLlnxvbLdgYmD0ZGAtS8wpTa0oYhBAqPMrzU1KLWpbM1WWe8qDbiYGhooCBgYGxhKgV1ILjBQAwHBEXtQAAAA=">Септембар2 2022</option><option value="H4sIAAAAAAAAAFvzloG1uIhBNjexJE2vuKQ0JTMvLV8vJUnPs7ggsyQvMyg_2zNFPO523i3GjBVMDMzBDGzp-UBFiT4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MbPlVeYnZQGkhJOngkqLMvHTrigL2Z0CrBUESeiAJPag-oUcLlnxvbLdgYmD0ZGAtS8wpTa0oYhBAqPMrzU1KLWpbM1WWe8qDbiYGhooCBgYGxhKgV1ILDBUAAyNpddQAAAA=">Септембар1 2022</option><option value="H4sIAAAAAAAAAFvzloG1uIhBNjexJE2vuKQ0JTMvLV8vJUnPs7ggsyQvMyg_2zNFPO523i3GjBVMDMzBDGzp-UBFiT4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MbPlVeYnZQGkhJOngkqLMvHTrigL2Z0CrBUESeiAJPag-oUcLlnxvbLdgYmD0ZGAtS8wpTa0oYhBAqPMrzU1KLWpbM1WWe8qDbiYGhooCBgYGxhIG1qzSPCMFANZcFXXUAAAA">Јун2 2022</option><option value="H4sIAAAAAAAAAFvzloG1uIhBNjexJE2vuKQ0JTMvLV8vJUnPs7ggsyQvMyg_2zNFPO523i3GjBVMDMzBDGzp-UBFiT4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MbPlVeYnZQGkhJOngkqLMvHTrigL2Z0CrBUESeiAJPag-oUcLlnxvbLdgYmD0ZGAtS8wpTa0oYhBAqPMrzU1KLWpbM1WWe8qDbiYGhooCBgYGxhIG1qzSPEMFABUPOF7UAAAA">Јун1 2022</option><option value="H4sIAAAAAAAAAFvzloG1uIhBNjexJE2vuKQ0JTMvLV8vJUnPs7ggsyQvMyg_2zNFPO523i3GjBVMDMzBDGzp-UBFiT4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MbPlVeYnZQGkhJOngkqLMvHTrigL2Z0CrBUESeiAJPag-oUcLlnxvbLdgYmD0ZGAtS8wpTa0oYhBAqPMrzU1KLWpbM1WWe8qDbiYGhooCBgYGxhIG1qzEPCMFAB6cbqrUAAAA">Јануар2 2022</option><option value="H4sIAAAAAAAAAFvzloG1uIhBNjexJE2vuKQ0JTMvLV8vJUnPs7ggsyQvMyg_2zNFPO523i3GjBVMDMzBDGzp-UBFiT4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MbPlVeYnZQGkhJOngkqLMvHTrigL2Z0CrBUESeiAJPag-oUcLlnxvbLdgYmD0ZGAtS8wpTa0oYhBAqPMrzU1KLWpbM1WWe8qDbiYGhooCBgYGxhIG1qzEPEMFAN3PQ4HUAAAA">Јануар1 2022</option><option value="H4sIAAAAAAAAAFvzloG1uIhBNjexJE2vuKQ0JTMvLV8vJUnPs7ggsyQvMyg_2zNFPO523i3GjBVMDMzBDGzp-UBFiT4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MbPlVeYnZQGkhJOngkqLMvHTrigL2Z0CrBUESeiAJPag-oUcLlnxvbLdgYmD0ZGAtS8wpTa0oYhBAqPMrzU1KLWpbM1WWe8qDbiYGhooCBgYGxhIG1qzEvIJiANexQ5rUAAAA">Јануар1-ПС 2022*</option></optgroup><optgroup label="Школска 2020/2021."><option value="god-2020">Сви из 2020/2021.</option><option value="H4sIAAAAAAAAAFvzloG1uIhBNjexJE2vuKQ0JTMvLV8vJUnPs7ggsyQvMyg_2zNFPO523i3GjBVMDMzBDGzp-UBFiT4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MbPlVeYnZQGkhJOngkqLMvHTrigL2p0CrBUESeiAJPag-oUcLlnxvbLdgYmD0ZGAtS8wpTa0oYhBAqPMrzU1KLWpbM1WWe8qDbiYGhooCBgYGxhKgV1ILjBQAPyDpKtQAAAA=">Септембар2 2021</option><option value="H4sIAAAAAAAAAFvzloG1uIhBNjexJE2vuKQ0JTMvLV8vJUnPs7ggsyQvMyg_2zNFPO523i3GjBVMDMzBDGzp-UBFiT4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MbPlVeYnZQGkhJOngkqLMvHTrigL2p0CrBUESeiAJPag-oUcLlnxvbLdgYmD0ZGAtS8wpTa0oYhBAqPMrzU1KLWpbM1WWe8qDbiYGhooCBgYGxhKgV1ILDBUA_HPEAdQAAAA=">Септембар1 2021</option><option value="H4sIAAAAAAAAAFvzloG1uIhBNjexJE2vuKQ0JTMvLV8vJUnPs7ggsyQvMyg_2zNFPO523i3GjBVMDMzBDGzp-UBFiT4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MbPlVeYnZQGkhJOngkqLMvHTrigL2p0CrBUESeiAJPag-oUcLlnxvbLdgYmD0ZGAtS8wpTa0oYhBAqPMrzU1KLWpbM1WWe8qDbiYGhooCBgYGxhKgV1ILDBQAvULfGNQAAAA=">Септембар0 2021</option><option value="H4sIAAAAAAAAAFvzloG1uIhBNjexJE2vuKQ0JTMvLV8vJUnPs7ggsyQvMyg_2zNFPO523i3GjBVMDMzBDGzp-UBFiT4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MbPlVeYnZQGkhJOngkqLMvHTrigL2p0CrBUESeiAJPag-oUcLlnxvbLdgYmD0ZGAtS8wpTa0oYhBAqPMrzU1KLWpbM1WWe8qDbiYGhooCBgYGxhIG1qzSPCMFACkMuAHUAAAA">Јун2 2021</option><option value="H4sIAAAAAAAAAFvzloG1uIhBNjexJE2vuKQ0JTMvLV8vJUnPs7ggsyQvMyg_2zNFPO523i3GjBVMDMzBDGzp-UBFiT4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MbPlVeYnZQGkhJOngkqLMvHTrigL2p0CrBUESeiAJPag-oUcLlnxvbLdgYmD0ZGAtS8wpTa0oYhBAqPMrzU1KLWpbM1WWe8qDbiYGhooCBgYGxhIG1qzSPEMFAOpflSrUAAAA">Јун1 2021</option><option value="H4sIAAAAAAAAAFvzloG1uIhBNjexJE2vuKQ0JTMvLV8vJUnPs7ggsyQvMyg_2zNFPO523i3GjBVMDMzBDGzp-UBFiT4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MbPlVeYnZQGkhJOngkqLMvHTrigL2p0CrBUESeiAJPag-oUcLlnxvbLdgYmD0ZGAtS8wpTa0oYhBAqPMrzU1KLWpbM1WWe8qDbiYGhooCBgYGxhIG1qzEPCMFAOHMw97UAAAA">Јануар2 2021</option><option value="H4sIAAAAAAAAAFvzloG1uIhBNjexJE2vuKQ0JTMvLV8vJUnPs7ggsyQvMyg_2zNFPO523i3GjBVMDMzBDGzp-UBFiT4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MbPlVeYnZQGkhJOngkqLMvHTrigL2p0CrBUESeiAJPag-oUcLlnxvbLdgYmD0ZGAtS8wpTa0oYhBAqPMrzU1KLWpbM1WWe8qDbiYGhooCBgYGxhIG1qzEPEMFACKf7vXUAAAA">Јануар1 2021</option></optgroup><optgroup label="Школска 2019/2020."><option value="god-2019">Сви из 2019/2020.</option><option value="H4sIAAAAAAAAAFvzloG1uIhBNjexJE2vuKQ0JTMvLV8vJUnPs7ggsyQvMyg_2zNFPO523i3GjBVMDMzBDGzp-UBFiT4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MbPlVeYnZQGkhJOngkqLMvHTrigL2J0CrBUESeiAJPag-oUcLlnxvbLdgYmD0ZGAtS8wpTa0oYhBAqPMrzU1KLWpbM1WWe8qDbiYGhooCBgYGxhKgV1ILjBQAVRJdsNQAAAA=">Септембар2 2020</option><option value="H4sIAAAAAAAAAFvzloG1uIhBNjexJE2vuKQ0JTMvLV8vJUnPs7ggsyQvMyg_2zNFPO523i3GjBVMDMzBDGzp-UBFiT4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MbPlVeYnZQGkhJOngkqLMvHTrigL2J0CrBUESeiAJPag-oUcLlnxvbLdgYmD0ZGAtS8wpTa0oYhBAqPMrzU1KLWpbM1WWe8qDbiYGhooCBgYGxhKgV1ILDBUAlkFwm9QAAAA=">Септембар1 2020</option><option value="H4sIAAAAAAAAAFvzloG1uIhBNjexJE2vuKQ0JTMvLV8vJUnPs7ggsyQvMyg_2zNFPO523i3GjBVMDMzBDGzp-UBFiT4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MbPlVeYnZQGkhJOngkqLMvHTrigL2J0CrBUESeiAJPag-oUcLlnxvbLdgYmD0ZGAtS8wpTa0oYhBAqPMrzU1KLWpbM1WWe8qDbiYGhooCBgYGxhIG1qzSPCMFAEM-DJvUAAAA">Јун2 2020</option><option value="H4sIAAAAAAAAAFvzloG1uIhBNjexJE2vuKQ0JTMvLV8vJUnPs7ggsyQvMyg_2zNFPO523i3GjBVMDMzBDGzp-UBFiT4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MbPlVeYnZQGkhJOngkqLMvHTrigL2J0CrBUESeiAJPag-oUcLlnxvbLdgYmD0ZGAtS8wpTa0oYhBAqPMrzU1KLWpbM1WWe8qDbiYGhooCBgYGxhIG1qzSPEMFAIBtIbDUAAAA">Јун1 2020</option><option value="H4sIAAAAAAAAAFvzloG1uIhBNjexJE2vuKQ0JTMvLV8vJUnPs7ggsyQvMyg_2zNFPO523i3GjBVMDMzBDGzp-UBFiT4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MbPlVeYnZQGkhJOngkqLMvHTrigL2J0CrBUESeiAJPag-oUcLlnxvbLdgYmD0ZGAtS8wpTa0oYhBAqPMrzU1KLWpbM1WWe8qDbiYGhooCBgYGxhIG1qzEPCMFAIv-d0TUAAAA">Јануар2 2020</option><option value="H4sIAAAAAAAAAFvzloG1uIhBNjexJE2vuKQ0JTMvLV8vJUnPs7ggsyQvMyg_2zNFPO523i3GjBVMDMzBDGzp-UBFiT4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MbPlVeYnZQGkhJOngkqLMvHTrigL2J0CrBUESeiAJPag-oUcLlnxvbLdgYmD0ZGAtS8wpTa0oYhBAqPMrzU1KLWpbM1WWe8qDbiYGhooCBgYGxhIG1qzEPEMFAEitWm_UAAAA">Јануар1 2020</option></optgroup></select>
+</label><label>&nbsp;&nbsp;&nbsp;<select name="tipPrijavljenihIspita" onchange="submitForm(this.form)">
+<option value="ALL_SUCCESSFUL" selected="selected">Успешна полагања</option><option value="ALL">Све испитне пријаве</option><option value="ALL_TAKEN">Сви изласци на испит</option></select>
+</label><input name="dosije" type="hidden" value="H4sIAAAAAAAAAFvzloG1uIhBMjexJE2vuKQ0JTMvLV8vJUnPJb84MyvVM6X7bvaddIsKfiYGJh8G7swUt8Ts0pyS1JLEEgZhn6zEskT9nMS8dH3PvJLU9NQiax8Gtsy8lNTs4kKGOgbGigKg2YIgVXogVXpQVUKPFiz53thuwcTA6MnAWpaYU5paUcQggFDnV5qblFrUtmaqLPeUB91MDAwVBQwMDIxgQ5kZTYRdAGIS3KC3AAAA"><br><br><label>За испите обележене искошеним словима још није закључен унос резултата.</label></td></tr></tbody></table><input type="hidden" name="csrfToken" value="9185494925710844590"><table name="ispiti" class="list">
+<caption>Пријављени испити</caption>
+<thead>
+<tr>
+<th class="counter">Бр.</th><th width="1">Ознака</th><th width="300">Назив</th><th width="120">Статус</th><th style="text-align: right" width="50">Шк. год.</th><th class="rok" width="120">Испитни рок</th><th style="text-align: right;" width="50">Поени</th><th style="text-align: right;" width="50">Оцена</th></tr>
+</thead>
+<tfoot style="display: none;"><tr><th></th></tr></tfoot><tbody>
+<tr class="oddRow">
+<td colspan="4"></td><td style="text-align: right; font-weight: bold; font-size: 8px; padding-top: 5px;">2020/21.</td><td colspan="3"></td></tr>
+<tr class="evenRow">
+<td class="counter">1.</td><td style="font-weight: bold;">М1.04</td><td style="font-weight: bold;">Алгебра 1</td><td>Полагао</td><td></td><td class="rok" nowrap="yes"><span id="tt-12128-sep2 -2021">Септембар2 2021</span></td><td id="poeniTd_18782021_sep2 " style="text-align: right;">ПО(0)+У(85)=85</td><td style="text-align: right;">9</td></tr>
+<tr style="display: none;" class="oddRow">
+<td colspan="8"></td></tr>
+<tr style="border-bottom: 1px solid #C6E59C" class="evenRow">
+<td style="background-color: #F4F4F4; height: 3px; border: none;" colspan="8"></td></tr>
+<tr class="oddRow">
+<td colspan="4"></td><td style="text-align: right; font-weight: bold; font-size: 8px; padding-top: 5px;">2019/20.</td><td colspan="3"></td></tr>
+<tr class="evenRow">
+<td class="counter">2.</td><td style="font-weight: bold;">15-М2.01</td><td style="font-weight: bold;">Анализа 1</td><td>Полагао</td><td></td><td class="rok" nowrap="yes"><span id="tt-10924-jun1 -2020">Јун1 2020</span></td><td id="poeniTd_21662020_jun1 " style="text-align: right;">ПО(0)+У(92)=92</td><td style="text-align: right;">10</td></tr>
+<tr style="display: none;" class="oddRow">
+<td colspan="8"></td></tr>
+<tr style="border-bottom: 1px solid #C6E59C" class="evenRow">
+<td style="background-color: #F4F4F4; height: 3px; border: none;" colspan="8"></td></tr>
+<tr class="oddRow">
+<td colspan="4"></td><td style="text-align: right; font-weight: bold; font-size: 8px; padding-top: 5px;">2020/21.</td><td colspan="3"></td></tr>
+<tr class="evenRow">
+<td class="counter">3.</td><td style="font-weight: bold;">М2.03</td><td style="font-weight: bold;">Анализа 2</td><td>Полагао</td><td></td><td class="rok" nowrap="yes"><span id="tt-12398-sep2 -2021">Септембар2 2021</span></td><td id="poeniTd_23572021_sep2 " style="text-align: right;">ПО(0)+П(65)=65</td><td style="text-align: right;">7</td></tr>
+<tr style="display: none;" class="oddRow">
+<td colspan="8"></td></tr>
+<tr style="border-bottom: 1px solid #C6E59C" class="evenRow">
+<td style="background-color: #F4F4F4; height: 3px; border: none;" colspan="8"></td></tr>
+<tr class="oddRow">
+<td colspan="4"></td><td style="text-align: right; font-weight: bold; font-size: 8px; padding-top: 5px;">2019/20.</td><td colspan="3"></td></tr>
+<tr class="evenRow">
+<td class="counter">4.</td><td style="font-weight: bold;">15-М3.01</td><td style="font-weight: bold;">Геометрија 1</td><td>Полагао</td><td></td><td class="rok" nowrap="yes"><span id="tt-10930-sep1 -2020">Септембар1 2020</span></td><td id="poeniTd_21692020_sep1 " style="text-align: right;">ПО(0)+П(69)+У(25)=94</td><td style="text-align: right;">10</td></tr>
+<tr style="display: none;" class="oddRow">
+<td colspan="8"></td></tr>
+<tr style="border-bottom: 1px solid #C6E59C" class="evenRow">
+<td style="background-color: #F4F4F4; height: 3px; border: none;" colspan="8"></td></tr>
+<tr class="oddRow">
+<td colspan="4"></td><td style="text-align: right; font-weight: bold; font-size: 8px; padding-top: 5px;">2020/21.</td><td colspan="3"></td></tr>
+<tr class="evenRow">
+<td class="counter">5.</td><td style="font-weight: bold;">15-М3.02</td><td style="font-weight: bold;">Геометрија 2</td><td>Полагао</td><td></td><td class="rok" nowrap="yes"><span id="tt-12361-sep1 -2021">Септембар1 2021</span></td><td id="poeniTd_18772021_sep1 " style="text-align: right;">ПО(0)+У(89)=89</td><td style="text-align: right;">9</td></tr>
+<tr style="display: none;" class="oddRow">
+<td colspan="8"></td></tr>
+<tr style="border-bottom: 1px solid #C6E59C" class="evenRow">
+<td style="background-color: #F4F4F4; height: 3px; border: none;" colspan="8"></td></tr>
+<tr class="oddRow">
+<td colspan="4"></td><td style="text-align: right; font-weight: bold; font-size: 8px; padding-top: 5px;">2022/23.</td><td colspan="3"></td></tr>
+<tr class="evenRow">
+<td class="counter">6.</td><td style="font-weight: bold;">15-М3.03</td><td style="font-weight: bold;">Геометрија 3</td><td>Полагао</td><td></td><td class="rok" nowrap="yes"><span id="tt-14416-janps-2023">Јануар1-ПС 2023*</span></td><td id="poeniTd_18812023_janps" style="text-align: right;">ПО(0)+У(71)=71</td><td style="text-align: right;">8</td></tr>
+<tr style="display: none;" class="oddRow">
+<td colspan="8"></td></tr>
+<tr style="border-bottom: 1px solid #C6E59C" class="evenRow">
+<td style="background-color: #F4F4F4; height: 3px; border: none;" colspan="8"></td></tr>
+<tr class="oddRow">
+<td colspan="4"></td><td style="text-align: right; font-weight: bold; font-size: 8px; padding-top: 5px;">2022/23.</td><td colspan="3"></td></tr>
+<tr class="evenRow">
+<td class="counter">7.</td><td style="font-weight: bold;">М2.06</td><td style="font-weight: bold;">Диференцијалне једначине А</td><td>Полагао</td><td></td><td class="rok" nowrap="yes"><span id="tt-14437-jan2 -2023">Јануар2 2023</span></td><td id="poeniTd_18902023_jan2 " style="text-align: right;">ПО(0)+У(75)=75</td><td style="text-align: right;">8</td></tr>
+<tr style="display: none;" class="oddRow">
+<td colspan="8"></td></tr>
+<tr style="border-bottom: 1px solid #C6E59C" class="evenRow">
+<td style="background-color: #F4F4F4; height: 3px; border: none;" colspan="8"></td></tr>
+<tr class="oddRow">
+<td colspan="4"></td><td style="text-align: right; font-weight: bold; font-size: 8px; padding-top: 5px;">2021/22.</td><td colspan="3"></td></tr>
+<tr class="evenRow">
+<td class="counter">8.</td><td style="font-weight: bold;">15-М2.31С</td><td style="font-weight: bold;">Комплексна анализа</td><td>Полагао</td><td></td><td class="rok" nowrap="yes"><span id="tt-13832-sep1 -2022">Септембар1 2022</span></td><td id="poeniTd_23832022_sep1 " style="text-align: right;">ПО(0)+У(71)=71</td><td style="text-align: right;">8</td></tr>
+<tr style="display: none;" class="oddRow">
+<td colspan="8"></td></tr>
+<tr style="border-bottom: 1px solid #C6E59C" class="evenRow">
+<td style="background-color: #F4F4F4; height: 3px; border: none;" colspan="8"></td></tr>
+
+
+<tr class="oddRow">
+<td colspan="4"></td><td style="text-align: right; font-weight: bold; font-size: 8px; padding-top: 5px;">2019/20.</td><td colspan="3"></td></tr><tr class="evenRow">
+<td class="counter">9.</td><td style="font-weight: bold;">15-М1.01</td><td style="font-weight: bold;">Линеарна алгебра</td><td>Полагао</td><td></td><td class="rok" nowrap="yes"><span id="tt-10925-sep1 -2020">Септембар1 2020</span></td><td id="poeniTd_21672020_sep1 " style="text-align: right;">ПО(0)+У(91)=91</td><td style="text-align: right;">10</td></tr><tr class="oddRow">
+<td colspan="4"></td><td style="text-align: right; font-weight: bold; font-size: 8px; padding-top: 5px;">2022/23.</td><td colspan="3"></td></tr><tr class="evenRow">
+<td class="counter">10.</td><td style="font-weight: bold;">М5.06</td><td style="font-weight: bold;">Математичка статистика</td><td>Полагао</td><td></td><td class="rok" nowrap="yes"><span id="tt-10925-sep1 -2020">Јануар2 2023</span></td><td id="poeniTd_21672020_sep1 " style="text-align: right;">ПО(83)+У(0)=83</td><td style="text-align: right;">9</td></tr><tr style="display: none;" class="oddRow">
+<td colspan="8"></td></tr>
+<tr style="border-bottom: 1px solid #C6E59C" class="evenRow">
+<td style="background-color: #F4F4F4; height: 3px; border: none;" colspan="8"></td></tr>
+<tr class="oddRow">
+<td colspan="4"></td><td style="text-align: right; font-weight: bold; font-size: 8px; padding-top: 5px;">2022/23.</td><td colspan="3"></td></tr>
+<tr class="evenRow">
+<td class="counter">11.</td><td style="font-weight: bold;">РМ04</td><td style="font-weight: bold;">Објектно-оријентисано програмирање</td><td>Полагао</td><td></td><td class="rok" nowrap="yes"><span id="tt-10925-sep1 -2020">Јануар2 2023</span></td><td id="poeniTd_21672020_sep1 " style="text-align: right;">ПО(59)+У(36)=95</td><td style="text-align: right;">10</td></tr><tr class="oddRow">
+<td colspan="4"></td><td style="text-align: right; font-weight: bold; font-size: 8px; padding-top: 5px;">2019/20.</td><td colspan="3"></td></tr><tr class="evenRow">
+<td class="counter">12.</td><td style="font-weight: bold;">РМ01</td><td style="font-weight: bold;">Програмирање 1</td><td>Полагао</td><td></td><td class="rok" nowrap="yes"><span id="tt-10928-jan1 -2020">Јануар1 2020</span></td><td id="poeniTd_15952020_jan1 " style="text-align: right;">ПО(34,3)+П(46,9)=81,2</td><td style="text-align: right;">9</td></tr>
+<tr style="display: none;" class="oddRow">
+<td colspan="8"></td></tr>
+<tr style="border-bottom: 1px solid #C6E59C" class="evenRow">
+<td style="background-color: #F4F4F4; height: 3px; border: none;" colspan="8"></td></tr>
+<tr class="oddRow">
+<td colspan="4"></td><td style="text-align: right; font-weight: bold; font-size: 8px; padding-top: 5px;">2019/20.</td><td colspan="3"></td></tr>
+<tr class="evenRow">
+<td class="counter">13.</td><td style="font-weight: bold;">РМ02</td><td style="font-weight: bold;">Програмирање 2</td><td>Полагао</td><td></td><td class="rok" nowrap="yes"><span id="tt-10932-sep1 -2020">Септембар1 2020</span></td><td id="poeniTd_16002020_sep1 " style="text-align: right;">ПО(0)+П(92)=92</td><td style="text-align: right;">10</td></tr>
+<tr style="display: none;" class="oddRow">
+<td colspan="8"></td></tr>
+<tr style="border-bottom: 1px solid #C6E59C" class="evenRow">
+<td style="background-color: #F4F4F4; height: 3px; border: none;" colspan="8"></td></tr>
+<tr class="oddRow">
+<td colspan="4"></td><td style="text-align: right; font-weight: bold; font-size: 8px; padding-top: 5px;">2019/20.</td><td colspan="3"></td></tr>
+<tr class="evenRow">
+<td class="counter">14.</td><td style="font-weight: bold;">С2.01</td><td style="font-weight: bold;">Страни језик</td><td>Полагао</td><td></td><td class="rok" nowrap="yes"><span id="tt-10929-jan2 -2020">Јануар2 2020</span></td><td id="poeniTd_21682020_jan2 " style="text-align: right;">ПО(65)+П(0)+У(30)=95</td><td style="text-align: right;">10</td></tr>
+<tr style="display: none;" class="oddRow">
+<td colspan="8"></td></tr>
+<tr style="border-bottom: 1px solid #C6E59C" class="evenRow">
+<td style="background-color: #F4F4F4; height: 3px; border: none;" colspan="8"></td></tr>
+<tr class="oddRow">
+<td colspan="4"></td><td style="text-align: right; font-weight: bold; font-size: 8px; padding-top: 5px;">2020/21.</td><td colspan="3"></td></tr>
+<tr class="evenRow">
+<td class="counter">15.</td><td style="font-weight: bold;">МС5.01</td><td style="font-weight: bold;">Увод у вероватноћу</td><td>Полагао</td><td></td><td class="rok" nowrap="yes"><span id="tt-12725-sep2 -2021">Септембар2 2021</span></td><td id="poeniTd_23812021_sep2 " style="text-align: right;">ПО(0)+П(47)+У(40)=87</td><td style="text-align: right;">9</td></tr>
+<tr style="display: none;" class="oddRow">
+<td colspan="8"></td></tr>
+<tr style="border-bottom: 1px solid #C6E59C" class="evenRow">
+<td style="background-color: #F4F4F4; height: 3px; border: none;" colspan="8"></td></tr>
+<tr class="oddRow">
+<td colspan="4"></td><td style="text-align: right; font-weight: bold; font-size: 8px; padding-top: 5px;">2019/20.</td><td colspan="3"></td></tr>
+<tr class="evenRow">
+<td class="counter">16.</td><td style="font-weight: bold;">М1.02</td><td style="font-weight: bold;">Увод у математичку логику</td><td>Полагао</td><td></td><td class="rok" nowrap="yes"><span id="tt-10926-jan2 -2020">Јануар2 2020</span></td><td id="poeniTd_15942020_jan2 " style="text-align: right;">ПО(0)+У(100)=100</td><td style="text-align: right;">10</td></tr>
+<tr style="display: none;" class="oddRow">
+<td colspan="8"></td></tr>
+<tr style="border-bottom: 1px solid #C6E59C" class="evenRow">
+<td style="background-color: #F4F4F4; height: 3px; border: none;" colspan="8"></td></tr>
+<tr class="oddRow">
+<td colspan="4"></td><td style="text-align: right; font-weight: bold; font-size: 8px; padding-top: 5px;">2020/21.</td><td colspan="3"></td></tr>
+<tr class="evenRow">
+<td class="counter">17.</td><td style="font-weight: bold;">М4.01</td><td style="font-weight: bold;">Увод у нумеричку математику</td><td>Полагао</td><td></td><td class="rok" nowrap="yes"><span id="tt-12439-sep2 -2021">Септембар2 2021</span></td><td id="poeniTd_18822021_sep2 " style="text-align: right;">ПО(0)+П(26)+У(25)=51</td><td style="text-align: right;">6</td></tr>
+<tr style="display: none;" class="oddRow">
+<td colspan="8"></td></tr>
+<tr style="border-bottom: 1px solid #C6E59C" class="evenRow">
+<td style="background-color: #F4F4F4; height: 3px; border: none;" colspan="8"></td></tr>
+<tr class="oddRow">
+<td colspan="4"></td><td style="text-align: right; font-weight: bold; font-size: 8px; padding-top: 5px;">2020/21.</td><td colspan="3"></td></tr>
+<tr class="evenRow">
+<td class="counter">18.</td><td style="font-weight: bold;">15-РМ03</td><td style="font-weight: bold;">Увод у организацију и архитектуру рачунара 1</td><td>Полагао</td><td></td><td class="rok" nowrap="yes"><span id="tt-12533-jun2 -2021">Јун2 2021</span></td><td id="poeniTd_23582021_jun2 " style="text-align: right;">ПО(0)+У(82,5)=82,5</td><td style="text-align: right;">9</td></tr>
+<tr style="display: none;" class="oddRow">
+<td colspan="8"></td></tr>
+<tr style="border-bottom: 1px solid #C6E59C" class="evenRow">
+<td style="background-color: #F4F4F4; height: 3px; border: none;" colspan="8"></td></tr>
+<tr class="oddRow">
+<td colspan="4"></td><td style="text-align: right; font-weight: bold; font-size: 8px; padding-top: 5px;">2020/21.</td><td colspan="3"></td></tr>
+<tr class="evenRow">
+<td class="counter">19.</td><td style="font-weight: bold;">МС5.02</td><td style="font-weight: bold;">Увод у статистику</td><td>Полагао</td><td></td><td class="rok" nowrap="yes"><span id="tt-12727-sep2 -2021">Септембар2 2021</span></td><td id="poeniTd_23822021_sep2 " style="text-align: right;">ПО(0)+П(68)=68</td><td style="text-align: right;">7</td></tr>
+</tbody>
+</table><a name="dno" id="dno"></a></p><div id="quick-bottom" class="non-printable"><hr id="quick-bottom-hr"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/polozeniIspiti">Положени испити</a> | <a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/prijavaIspitaFormular">Пријављивање испита</a><br><div style="width: 100%; height: 3px;"></div><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/uputstvo?skipOutputProcessing=skipOutputProcessing#Ispiti" target="_blank">Упутство</a></div><div id="copyright-msg" class="non-printable"><hr>
+												Информациони систем СтудИнфо, верзија 2022-12
+												© 2005-2023 Универзитет у Београду - Математички факултет
+											</div></td><td id="quick" class="non-printable"><ul><li><div class="li-content"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/polozeniIspiti">Положени испити</a></div></li><li><div class="li-content"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/prijavaIspitaFormular">Пријављивање испита</a></div></li><li class="no-list"><div class="li-content"><br></div></li><li><div class="li-content"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/uputstvo?skipOutputProcessing=skipOutputProcessing#Ispiti" target="_blank">Упутство</a></div></li></ul></td></tr></tbody></table>
+
+
+<table class="non-printable invisible" style="position: absolute; background-color: rgb(255, 255, 255); padding: 0px; width: 1px; height: 1px; opacity: 0.8; left: 982px; top: 114px;" border="1"><tbody><tr><td style="border: 1px dashed rgb(204, 204, 204); text-align: center; vertical-align: middle; padding: 0px;">					<img src="./ispiti_files/export.png" alt="Извези податке" title="Извези податке" style="border: medium none; cursor: pointer; margin: 3px;">				</td></tr></tbody></table><div id="_tooltip_tt-12128-sep2 -2021" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">2021</div><div id="_tooltip_poeniTd_18782021_sep2 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">Предиспитне обавезе + усмени испит = укупно поена.</div><div id="_tooltip_tt-10924-jun1 -2020" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">2020</div><div id="_tooltip_poeniTd_21662020_jun1 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">Предиспитне обавезе + усмени испит = укупно поена.</div><div id="_tooltip_tt-12398-sep2 -2021" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; font-size: 10px; max-width: 400px; font-family: Verdana, Arial; left: 716px; top: 286px; display: none;">2021</div><div id="_tooltip_poeniTd_23572021_sep2 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">Предиспитне обавезе + писмени испит = укупно поена.</div><div id="_tooltip_tt-10930-sep1 -2020" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">2020</div><div id="_tooltip_poeniTd_21692020_sep1 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; font-size: 10px; max-width: 400px; font-family: Verdana, Arial; left: 458px; top: 322px; display: none;">Предиспитне обавезе + писмени испит + усмени испит = укупно поена.</div><div id="_tooltip_tt-12361-sep1 -2021" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">2021</div><div id="_tooltip_poeniTd_18772021_sep1 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">Предиспитне обавезе + усмени испит = укупно поена.</div><div id="_tooltip_tt-14416-janps-2023" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">2023</div><div id="_tooltip_poeniTd_18812023_janps" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; font-size: 10px; max-width: 400px; font-family: Verdana, Arial; left: 617px; top: 411px; display: none;">Предиспитне обавезе + усмени испит = укупно поена.</div><div id="_tooltip_tt-14437-jan2 -2023" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">2023</div><div id="_tooltip_poeniTd_18902023_jan2 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">Предиспитне обавезе + усмени испит = укупно поена.</div><div id="_tooltip_tt-13832-sep1 -2022" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">2022</div><div id="_tooltip_poeniTd_23832022_sep1 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">Предиспитне обавезе + усмени испит = укупно поена.</div><div id="_tooltip_tt-10925-sep1 -2020" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">2020</div><div id="_tooltip_poeniTd_21672020_sep1 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">Предиспитне обавезе + усмени испит = укупно поена.</div><div id="_tooltip_tt-10928-jan1 -2020" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">2020</div><div id="_tooltip_poeniTd_15952020_jan1 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">Предиспитне обавезе + писмени испит = укупно поена.</div><div id="_tooltip_tt-10932-sep1 -2020" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">2020</div><div id="_tooltip_poeniTd_16002020_sep1 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">Предиспитне обавезе + писмени испит = укупно поена.</div><div id="_tooltip_tt-10929-jan2 -2020" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">2020</div><div id="_tooltip_poeniTd_21682020_jan2 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">Предиспитне обавезе + писмени испит + усмени испит = укупно поена.</div><div id="_tooltip_tt-12725-sep2 -2021" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">2021</div><div id="_tooltip_poeniTd_23812021_sep2 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">Предиспитне обавезе + писмени испит + усмени испит = укупно поена.</div><div id="_tooltip_tt-10926-jan2 -2020" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">2020</div><div id="_tooltip_poeniTd_15942020_jan2 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">Предиспитне обавезе + усмени испит = укупно поена.</div><div id="_tooltip_tt-12439-sep2 -2021" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">2021</div><div id="_tooltip_poeniTd_18822021_sep2 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">Предиспитне обавезе + писмени испит + усмени испит = укупно поена.</div><div id="_tooltip_tt-12533-jun2 -2021" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">2021</div><div id="_tooltip_poeniTd_23582021_jun2 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">Предиспитне обавезе + усмени испит = укупно поена.</div><div id="_tooltip_tt-12727-sep2 -2021" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">2021</div><div id="_tooltip_poeniTd_23822021_sep2 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">Предиспитне обавезе + писмени испит = укупно поена.</div><table class="non-printable invisible" border="1" style="position: absolute; background-color: rgb(255, 255, 255); padding: 0px; width: 1px; height: 1px; opacity: 0.8; left: 947px; top: 90px;"><tbody><tr><td style="border: 1px dashed rgb(204, 204, 204); text-align: center; vertical-align: middle; padding: 0px;">					<img src="file:///D:/StudInfo/images/export.png" alt="Извези податке" title="Извези податке" style="border: none; cursor: pointer; margin: 3px;">				</td></tr></tbody></table><div id="_tooltip_tt-12128-sep2 -2021" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">2021</div><div id="_tooltip_poeniTd_18782021_sep2 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">Предиспитне обавезе + усмени испит = укупно поена.</div><div id="_tooltip_tt-10924-jun1 -2020" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">2020</div><div id="_tooltip_poeniTd_21662020_jun1 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">Предиспитне обавезе + усмени испит = укупно поена.</div><div id="_tooltip_tt-12398-sep2 -2021" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">2021</div><div id="_tooltip_poeniTd_23572021_sep2 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; font-size: 10px; max-width: 400px; font-family: Verdana, Arial; left: 338px; top: 266px; display: none;">Предиспитне обавезе + писмени испит = укупно поена.</div><div id="_tooltip_tt-10930-sep1 -2020" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">2020</div><div id="_tooltip_poeniTd_21692020_sep1 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; font-size: 10px; max-width: 400px; font-family: Verdana, Arial; left: 258px; top: 313px; display: none;">Предиспитне обавезе + писмени испит + усмени испит = укупно поена.</div><div id="_tooltip_tt-12361-sep1 -2021" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">2021</div><div id="_tooltip_poeniTd_18772021_sep1 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; font-size: 10px; max-width: 400px; font-family: Verdana, Arial; left: 366px; top: 335px; display: none;">Предиспитне обавезе + усмени испит = укупно поена.</div><div id="_tooltip_tt-14416-janps-2023" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">2023</div><div id="_tooltip_poeniTd_18812023_janps" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; font-size: 10px; max-width: 400px; font-family: Verdana, Arial; left: 329px; top: 384px; display: none;">Предиспитне обавезе + усмени испит = укупно поена.</div><div id="_tooltip_tt-14437-jan2 -2023" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; font-size: 10px; max-width: 400px; font-family: Verdana, Arial; left: 444px; top: 441px; display: none;">2023</div><div id="_tooltip_poeniTd_18902023_jan2 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; font-size: 10px; max-width: 400px; font-family: Verdana, Arial; left: 357px; top: 445px; display: none;">Предиспитне обавезе + усмени испит = укупно поена.</div><div id="_tooltip_tt-13832-sep1 -2022" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">2022</div><div id="_tooltip_poeniTd_23832022_sep1 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; font-size: 10px; max-width: 400px; font-family: Verdana, Arial; left: 279px; top: 475px; display: none;">Предиспитне обавезе + усмени испит = укупно поена.</div><div id="_tooltip_tt-10925-sep1 -2020" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; font-size: 10px; max-width: 400px; font-family: Verdana, Arial; left: 486px; top: 540px; display: none;">2020</div><div id="_tooltip_poeniTd_21672020_sep1 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; font-size: 10px; max-width: 400px; font-family: Verdana, Arial; left: 281px; top: 547px; display: none;">Предиспитне обавезе + усмени испит = укупно поена.</div><div id="_tooltip_tt-10928-jan1 -2020" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; font-size: 10px; max-width: 400px; font-family: Verdana, Arial; left: 440px; top: 615px; display: none;">2020</div><div id="_tooltip_poeniTd_15952020_jan1 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; font-size: 10px; max-width: 400px; font-family: Verdana, Arial; left: 284px; top: 632px; display: none;">Предиспитне обавезе + писмени испит = укупно поена.</div><div id="_tooltip_tt-10932-sep1 -2020" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; font-size: 10px; max-width: 400px; font-family: Verdana, Arial; left: 456px; top: 657px; display: none;">2020</div><div id="_tooltip_poeniTd_16002020_sep1 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">Предиспитне обавезе + писмени испит = укупно поена.</div><div id="_tooltip_tt-10929-jan2 -2020" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; font-size: 10px; max-width: 400px; font-family: Verdana, Arial; left: 474px; top: 691px; display: none;">2020</div><div id="_tooltip_poeniTd_21682020_jan2 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; font-size: 10px; max-width: 400px; font-family: Verdana, Arial; left: 159px; top: 699px; display: none;">Предиспитне обавезе + писмени испит + усмени испит = укупно поена.</div><div id="_tooltip_tt-12725-sep2 -2021" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; font-size: 10px; max-width: 400px; font-family: Verdana, Arial; left: 493px; top: 729px; display: none;">2021</div><div id="_tooltip_poeniTd_23812021_sep2 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; font-size: 10px; max-width: 400px; font-family: Verdana, Arial; left: 493px; top: 614px; display: none;">Предиспитне обавезе + писмени испит + усмени испит = укупно поена.</div><div id="_tooltip_tt-10926-jan2 -2020" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">2020</div><div id="_tooltip_poeniTd_15942020_jan2 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">Предиспитне обавезе + усмени испит = укупно поена.</div><div id="_tooltip_tt-12439-sep2 -2021" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">2021</div><div id="_tooltip_poeniTd_18822021_sep2 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">Предиспитне обавезе + писмени испит + усмени испит = укупно поена.</div><div id="_tooltip_tt-12533-jun2 -2021" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">2021</div><div id="_tooltip_poeniTd_23582021_jun2 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">Предиспитне обавезе + усмени испит = укупно поена.</div><div id="_tooltip_tt-12727-sep2 -2021" style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">2021</div><div id="_tooltip_poeniTd_23822021_sep2 " style="position: absolute; border: 1px solid; background-color: rgb(204, 204, 255); padding: 2px; display: none; font-size: 10px; max-width: 400px; font-family: Verdana, Arial;">Предиспитне обавезе + писмени испит = укупно поена.</div></body></html>

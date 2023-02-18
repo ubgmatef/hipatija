@@ -1,0 +1,116 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript">
+			var GlobalJSConfig =
+			{
+				context: '/StudInfo',
+				facultyId: '1',
+				faculty: 'matf',
+				indexRegexp: '^((\\d{1,4}(/|-)(\\d{4}|\\d{2}))|([A-Za-z]{2}\\d{5}))$',
+				cacheVersion: '2022-12'
+			};
+		</script><link rel="icon" type="image/png" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon-192x192.png" sizes="192x192"><link rel="apple-touch-icon" sizes="180x180" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon-apple-touch-icon.png"><link rel="shortcut icon" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon.ico"><link rel="mask-icon" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/manifest.webmanifest"><title>Добродошли!</title><meta name="viewport" content="width=device-width, maximum-scale=3, minimum-scale=-4, user-scalable=yes"><link href="index_files/osnovno.css" media="screen" rel="stylesheet" type="text/css"><link href="index_files/prijavljivanje.css" media="screen" rel="stylesheet" type="text/css"><link href="index_files/mobilni.css" media="only screen and (max-width: 600px)" rel="stylesheet" type="text/css"><link href="index_files/sviKorisnici.css" rel="stylesheet" type="text/css"><link rel="apple-touch-icon" sizes="180x180" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon-apple-touch-icon.png"><link rel="icon" type="image/png" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon-192x192.png" sizes="192x192"><link rel="shortcut icon" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon.ico"><script language="javascript" src="index_files/Util.js"></script><script language="javascript" src="index_files/Report.js"></script><script language="javascript" src="index_files/javascript.js"></script><script language="javascript" src="index_files/forms.js"></script><script language="javascript" src="index_files/jquery.js"></script><script language="javascript">
+			window.onload = function(e)
+			{
+				document.getElementById('submit').disabled = false;
+
+				var loginForm = document.forms["login-student"];
+
+				loginForm["index"].focus();
+
+				loginForm.onsubmit = function(e)
+				{
+					var button = document.getElementById("submit");
+					button.disabled = true;
+					var fields = [new ValField('index', 'non-null', 'Број индекса'),
+						new ValField('index', 'student-index', 'Број индекса'),
+						new ValField(document.getElementById('password').name, 'non-null', 'Лозинка')];
+
+					var valid = validateForm(this.name, fields);
+
+					if (!valid)
+					{
+						this["index"].focus();
+						button.disabled = false;
+					}
+
+					return(valid);
+				}
+				
+				
+				loginForm["code"].value = '1676683126941';
+			}
+		</script></head>
+	<body><a name="vrh" id="vrh"></a><div id="allContents">
+			<div id="opisTableRow">
+				<div id="help">
+					
+
+					Да бисте се пријавили, унесите свој број индекса
+					
+					у облику број/година и лозинку коју користите на студентском серверу Алас.
+					
+					Кодни распоред мора бити постављен на енглеску латиницу.<br>
+					<br>
+					Пријављивање је могуће само за студенте који студирају по новом систему студирања.<br>
+				    <br>
+				    <noscript>
+				    <span style="color: red; font-weight: bold;">Неопходно је да у Вашем претраживачу буде укључен JavaScript!</span><br>
+					<br>
+				    </noscript>
+				    
+					У случају проблема са пријављивањем, пошаљите поруку
+					
+					на <a href="mailto:pomoc@alas.matf.bg.ac.rs">pomoc@alas.matf.bg.ac.rs</a>.
+					
+				    Порука треба да садржи број индекса, текст грешке и податке који се прикажу кликом на линк
+				    <nobr>„Технички подаци“</nobr> поред текста грешке.<br>
+					
+				    <br>
+				    Студенти који су прешли на нови скуп студијских програма као и студенти дипломских
+				    и докторских студија који не могу да се пријаве треба да пошаљу стари и нови број индекса
+				    на наведену адресу.
+					
+					
+					
+				</div>
+			</div>
+			<div id="loginTableRow">
+				<div id="tabela">
+					<table style="align: left; width: 100%;">
+						<tbody>
+							<tr><td>
+								<form action="prvastrana.htm">
+									<table class="login" style="background-color: #D2E0BC;" align="center">
+										<thead style="background-color: #025B53">
+											<tr><th>Студент</th></tr>
+										</thead>
+										<tbody>
+											<tr><td>
+												<label for="index">број индекса</label><br>
+												<input name="index" id="index" type="text" autocomplete="off">
+											</td></tr>
+											<tr><td>
+												<label for="password">лозинка</label><br>
+												<input name="code" id="code" value="1676683126941" type="hidden">
+												<input name="password-1676683126941" id="password" value="" type="password" autocomplete="off">
+											</td></tr>
+										</tbody>
+										<tfoot>
+											<tr><td>
+												<button id="submit" type="submit">Пријавите се</button>
+											</td></tr>
+										</tfoot>
+									</table>
+								<input type="hidden" name="csrfToken" value="5108242334422225653"></form>
+								<div id="copyright-msg" class="non-printable" style="margin-top: 25px;">
+									Информациони систем СтудИнфо, верзија 2022-12
+									© 2005-2023 Универзитет у Београду - Математички факултет
+								</div>
+							</td></tr>		
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div><a name="dno" id="dno"></a>
+
+
+</body></html>

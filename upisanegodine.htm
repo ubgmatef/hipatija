@@ -1,0 +1,209 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript">
+			var GlobalJSConfig =
+			{
+				context: '/StudInfo',
+				facultyId: '1',
+				faculty: 'matf',
+				indexRegexp: '^((\\d{1,4}(/|-)(\\d{4}|\\d{2}))|([A-Za-z]{2}\\d{5}))$',
+				cacheVersion: '2022-12'
+			};
+		</script><link href="upisanegodine_files/osnovno_003.css" rel="stylesheet" type="text/css"><link href="upisanegodine_files/osnovno.css" rel="stylesheet" type="text/css" media="screen"><link href="upisanegodine_files/osnovno_002.css" rel="stylesheet" type="text/css" media="print"><link href="upisanegodine_files/sviKorisnici_002.css" rel="stylesheet" type="text/css"><link href="upisanegodine_files/sviKorisnici_003.css" rel="stylesheet" type="text/css" media="screen"><link href="upisanegodine_files/sviKorisnici.css" rel="stylesheet" type="text/css" media="print"><link href="upisanegodine_files/studenti.css" rel="stylesheet" type="text/css"><link href="upisanegodine_files/studenti_003.css" rel="stylesheet" type="text/css" media="screen"><link href="upisanegodine_files/studenti_002.css" rel="stylesheet" type="text/css" media="print"><link href="upisanegodine_files/aplikacija.css" rel="stylesheet" type="text/css" media="print"><style type="text/css" media="screen">
+				td#cont {
+					background-image: url(/StudInfo/images/studenti/cont-bg.gif);
+					
+				}
+			</style><style type="text/css">
+			caption {
+				background-image: url(/StudInfo/images/studenti/caption-bg.gif);
+			}
+			table.list caption,
+			.caption {
+				background-image: url(/StudInfo/images/studenti/caption-bg.gif);
+			}
+			td#menu table tbody tr td {
+				background-image: url(/StudInfo/images/studenti/menuitem-bg.gif);
+			}
+			td#menu table tbody tr td a:hover {
+				background-image: url(/StudInfo/images/studenti/menu-arrow.gif);
+			}
+			div.submenu table tr td {
+				background-image: url(/StudInfo/images/studenti/submenuitem-bg.gif);
+			}
+			div.submenu table tr td a:hover {
+				background-image: url(/StudInfo/images/studenti/menu-arrow.gif);
+			}
+		</style><script type="text/javascript" src="upisanegodine_files/jquery.js"></script><script type="text/javascript" src="upisanegodine_files/jquery-extend.js"></script><script type="text/javascript" src="upisanegodine_files/jquery.SI.js"></script><script type="text/javascript" src="upisanegodine_files/jquery.Table2CSV.js"></script><script type="text/javascript" src="upisanegodine_files/javascript.js"></script><script type="text/javascript" src="upisanegodine_files/controls.js"></script><script type="text/javascript" src="upisanegodine_files/menus.js"></script><script type="text/javascript" src="upisanegodine_files/Util.js"></script><script type="text/javascript" src="upisanegodine_files/Position.js"></script><script type="text/javascript" src="upisanegodine_files/Tooltip.js"></script><script type="text/javascript" src="upisanegodine_files/Report.js"></script><script type="text/javascript">
+			<!--
+			function initCalendars() {
+				
+			}
+			//-->
+		</script><script type="text/javascript">
+			<!--
+			function initTBAutocomplete() {
+			
+			}
+			//-->
+		</script><script type="text/javascript" src="upisanegodine_files/forms.js"></script><script type="text/javascript">
+		function initFormValidation()
+		{
+			
+		}
+		</script><script type="text/javascript">
+					function initSessionControl() {}
+				</script><script type="text/javascript"></script><script type="text/javascript">
+			$(window).load(function(e){
+				
+				$("table.list").drawList();
+				
+				EXPORT_ICON = '/StudInfo/images/export.png';
+				$("table.list,table.exportable").Table2CSV_prepare("/StudInfo/file/", ["csvIgnore"], "not-exportable");
+				
+				
+				$(".submitlink").bind('click', function(e) {
+					if (e.which == 2)
+						return false;
+				});
+				
+				
+				$("table.object-edit").formatObjectEdit();
+
+				initCalendars();
+				initTBAutocomplete();
+				initFormValidation();
+				initSessionControl();
+				
+				
+				 
+				$.SI.Form.focusFirst();
+						
+			});
+		</script><link rel="icon" type="image/png" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon-192x192.png" sizes="192x192"><link rel="apple-touch-icon" sizes="180x180" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon-apple-touch-icon.png"><link rel="shortcut icon" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/favicon.ico"><link rel="mask-icon" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/images/manifest.webmanifest"><title>Уписане године</title></head>
+	<body><div id="sm3" class="submenu" onmouseover="showMenu('m3', 'sm3')" onmouseout="hideMenu('sm3')"><table><tbody><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/prijavaIspitaFormular">Пријављивање испита</a></td></tr><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/prijavljeniIspiti">Преглед полагања</a></td></tr><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/polozeniIspiti">Положени испити</a></td></tr></tbody></table></div><div id="sm15" class="submenu" onmouseover="showMenu('m15', 'sm15')" onmouseout="hideMenu('sm15')"><table><tbody><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/odjavljivanje" onclick="return(confirm('Да ли заиста желите да се одјавите?'));">Одјављивање</a></td></tr><tr><td><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/spisakPrijavljivanja">Списак пријављивања</a></td></tr></tbody></table></div><table style="height: 100%;"><tbody><tr><td id="left"><table id="left-table"><tbody><tr><td style="text-align: center; padding: 5px; font-weight: bold;">Универзитет у Београду - Математички факултет</td></tr><tr><td id="logo"><div class="logo"><img id="grb" src="upisanegodine_files/grb.gif"></div></td></tr><tr><td style="font-weight: bold; text-align: left; padding: 0 10px 5px 10px;">Душан Гарић<br>20/2019</td></tr><tr><td id="menu"><table><tbody><tr><td><a id="m1" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/" onmouseover="showMenu('m1', 'sm1')" onmouseout="hideMenu('sm1')">Прва страна</a></td></tr><tr><td><a id="m2" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/kurseviIGrupe" onmouseover="showMenu('m2', 'sm2')" onmouseout="hideMenu('sm2')">Курсеви и групе</a></td></tr><tr><td><a id="m3" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/prijavljeniIspiti" onmouseover="showMenu('m3', 'sm3')" onmouseout="hideMenu('sm3')">Испити</a></td></tr><tr><td><a id="m4" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/finansijskoStanje" onmouseover="showMenu('m4', 'sm4')" onmouseout="hideMenu('sm4')">Финансије</a></td></tr><tr><td><a id="m5" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/upisaneGodine" onmouseover="showMenu('m5', 'sm5')" onmouseout="hideMenu('sm5')">Уписане године</a></td></tr><tr><td><a id="m6" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/izborPredmeta" onmouseover="showMenu('m6', 'sm6')" onmouseout="hideMenu('sm6')">Избор предмета</a></td></tr><tr><td><a id="m7" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/upisGodine" onmouseover="showMenu('m7', 'sm7')" onmouseout="hideMenu('sm7')">Упис године</a></td></tr><tr><td style="padding: 0px 0px 0px 0px;"><div class="menu-separator"></div></td></tr><tr><td><a id="m9" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/molbeStudenta" onmouseover="showMenu('m9', 'sm9')" onmouseout="hideMenu('sm9')">Молбе</a></td></tr><tr><td><a id="m10" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/licniPodaci" onmouseover="showMenu('m10', 'sm10')" onmouseout="hideMenu('sm10')">Лични подаци</a></td></tr><tr><td><a id="m11" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/uputstvo?skipOutputProcessing" onmouseover="showMenu('m11', 'sm11')" onmouseout="hideMenu('sm11')" target="_blank">Упутство</a></td></tr><tr><td style="padding: 0px 0px 0px 0px;"><div class="menu-separator"></div></td></tr><tr><td><a id="m13" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/#" onmouseover="showMenu('m13', 'sm13')" onmouseout="hideMenu('sm13')" onclick="print(); return false;">Штампај</a></td></tr><tr><td style="padding: 0px 0px 0px 0px;"><div class="menu-separator"></div></td></tr><tr><td><a id="m15" href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/odjavljivanje" onmouseover="showMenu('m15', 'sm15')" onmouseout="hideMenu('sm15')" onclick="return(confirm('Да ли заиста желите да се одјавите?'));">Кориснички налог</a></td></tr></tbody></table></td></tr><tr><td id="left-footer"></td></tr></tbody></table></td><td id="cont"><a name="vrh" id="vrh"></a><h1>Уписане године</h1><div class="page-date-and-time">18. фебруар 2023. 02:29</div><span><table name="tableModuli" class="list" width="100%">
+<caption>Уписани модули</caption>
+<thead>
+<tr>
+<th>Ознака</th><th>Назив</th><th style="text-align: right">Претходи ЕСПБ</th><th style="text-align: right;">ЕСПБ</th><th>Датум уписа</th><th>При упису школске</th></tr>
+</thead>
+<tfoot style="display: none;"><tr><th></th></tr></tfoot><tbody>
+<tr class="oddRow">
+<td>1МС.0.15</td><td><span>Статистика, актуарска и финансијска математика (основни)</span></td><td style="text-align: right;">0</td><td style="text-align: right;">60</td><td>1. јул 2019.</td><td>2019/2020.</td></tr>
+<tr class="evenRow">
+<td>1МС.15</td><td><span>Статистика, актуарска и финансијска математика</span></td><td style="text-align: right;">60</td><td style="text-align: right;">180</td><td>8. октобар 2020.</td><td>2020/2021.</td></tr>
+</tbody>
+</table>
+<br><table name="Kursevi" class="list" width="100%">
+<thead style="display: none;"><tr><th></th></tr></thead><tfoot style="display: none;"><tr><th></th></tr></tfoot><tbody>
+<tr class="oddRow">
+<td class="caption" style="border: 0px;" colspan="9">2022/2023 - Самофинансирање, 10. октобар 2022.</td></tr>
+<tr class="evenRow">
+<th class="counter">Бр.</th><th>Семестар</th><th>Ознака</th><th>Назив</th><th>Наставник</th><th style="text-align: right;">Бр. уписа</th><th>Датум полагања</th><th style="text-align: right;">ЕСПБ</th><th style="text-align: right;">Оцена</th></tr>
+<tr class="oddRow">
+<td class="counter">1.</td><td>1</td><td>М2.29</td><td>Анализа 3А</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCw2AEAUIS3w7cAAAA%3D', 580, 300, true); return false;">проф. др Данко Јоцић</a></span></td><td style="text-align: right;">2</td><td>-</td><td style="text-align: right;">5</td><td style="text-align: right;">-</td></tr>
+<tr class="evenRow">
+<td class="counter">2.</td><td>1</td><td>М2.06</td><td>Диференцијалне једначине А</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCw1AAA7KRlW7cAAAA%3D', 580, 300, true); return false;">др Марија Микић</a></span></td><td style="text-align: right;">2</td><td>30.01.2023.</td><td style="text-align: right;">5</td><td style="text-align: right;">8 (75)</td></tr>
+<tr class="oddRow">
+<td class="counter">3.</td><td>1</td><td>М5.04</td><td>Статистички софтвер 1</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwygAA9fTMD7cAAAA%3D', 580, 300, true); return false;">Бојана Тодић</a></span></td><td style="text-align: right;">2</td><td>-</td><td style="text-align: right;">3</td><td style="text-align: right;">-</td></tr>
+<tr class="evenRow">
+<td class="counter">4.</td><td>1</td><td>М5.03</td><td>Теорија вероватноћа</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwcgAAiCAWFbcAAAA%3D', 580, 300, true); return false;">др Марија Цупарић</a></span></td><td style="text-align: right;">2</td><td>-</td><td style="text-align: right;">10</td><td style="text-align: right;">-</td></tr>
+<tr class="oddRow">
+<td class="counter">5.</td><td>2</td><td>15-М3.03</td><td>Геометрија 3</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwiAEAqiwC9rcAAAA%3D', 580, 300, true); return false;">проф. др Мирјана Ђорић</a></span></td><td style="text-align: right;">3</td><td>12.01.2023.</td><td style="text-align: right;">5</td><td style="text-align: right;">8 (71)</td></tr>
+<tr class="evenRow">
+<td class="counter">6.</td><td>2</td><td>М5.05</td><td>Математичка статистика</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyAxn1ABMBG7-3AAAA', 580, 300, true); return false;">др Марко Обрадовић</a></span></td><td style="text-align: right;">2</td><td>24.01.2023.</td><td style="text-align: right;">10</td><td style="text-align: right;">9(83)</td></tr>
+<tr class="oddRow">
+<td class="counter">7.</td><td>2</td><td>РМ04</td><td>Објектно-оријентисано програмирање</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwKAEAH9i217cAAAA%3D', 580, 300, true); return false;">др Александар Картељ</a></span></td><td style="text-align: right;">3</td><td>16.02.2023.</td><td style="text-align: right;">5</td><td style="text-align: right;">10(95)</td></tr>
+<tr class="evenRow">
+<td class="counter">8.</td><td>2</td><td>М5.06</td><td>Случајни процеси</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwsgIANVyna7cAAAA%3D', 580, 300, true); return false;">др Јелена Јоцковић</a></span></td><td style="text-align: right;">2</td><td>-</td><td style="text-align: right;">9</td><td style="text-align: right;">-</td></tr>
+<tr class="oddRow">
+<td class="counter">9.</td><td>2</td><td>М5.07</td><td>Статистички софтвер 2</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwxgIA84UXDrcAAAA%3D', 580, 300, true); return false;">Благоје Ивановић</a></span></td><td style="text-align: right;">2</td><td>-</td><td style="text-align: right;">3</td><td style="text-align: right;">-</td></tr>
+<tr class="evenRow">
+<td class="counter">10.</td><td>2</td><td>М5.08</td><td>Теорија узорака</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyAxm3AeJmoG63AAAA', 580, 300, true); return false;">др Милан Јовановић</a></span></td><td style="text-align: right;">2</td><td>-</td><td style="text-align: right;">5</td><td style="text-align: right;">-</td></tr>
+<tr class="oddRow">
+<td style="font-weight: bold; text-align: right;" colspan="8">Укупно положено:&nbsp;&nbsp;&nbsp;25 / 60</td><td style="font-weight: bold; text-align: right;">8,75</td></tr>
+<tr class="evenRow">
+<td style="background-color: #FFFFFF; height: 20px; border: none;" colspan="9"></td></tr>
+<tr class="oddRow highlightedRow">
+<td class="caption" style="border: 0px;" colspan="9">2021/2022 - Буџет, 6. октобар 2021. (оверена 10. октобра 2022.)</td></tr>
+<tr class="evenRow">
+<th class="counter">Бр.</th><th>Семестар</th><th>Ознака</th><th>Назив</th><th>Наставник</th><th style="text-align: right;">Бр. уписа</th><th>Датум полагања</th><th style="text-align: right;">ЕСПБ</th><th style="text-align: right;">Оцена</th></tr>
+<tr class="oddRow">
+<td class="counter">1.</td><td>1</td><td>М2.29</td><td>Анализа 3А</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwcgMAMnEfjLcAAAA%3D', 580, 300, true); return false;">Милан Лазаревић</a></span></td><td style="text-align: right;">1</td><td>-</td><td style="text-align: right;">5</td><td style="text-align: right;">-</td></tr>
+<tr class="evenRow">
+<td class="counter">2.</td><td>1</td><td>М2.06</td><td>Диференцијалне једначине А</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCw1AAA7KRlW7cAAAA%3D', 580, 300, true); return false;">др Марија Микић</a></span></td><td style="text-align: right;">1</td><td>-</td><td style="text-align: right;">5</td><td style="text-align: right;">-</td></tr>
+<tr class="oddRow">
+<td class="counter">3.</td><td>1</td><td>15-М2.31С</td><td>Комплексна анализа</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwOAEAR7kEmrcAAAA%3D', 580, 300, true); return false;">др Владимир Божин</a></span></td><td style="text-align: right;">1</td><td>24.09.2022.</td><td style="text-align: right;">5</td><td style="text-align: right;">8 (71)</td></tr>
+<tr class="evenRow">
+<td class="counter">4.</td><td>1</td><td>М5.04</td><td>Статистички софтвер 1</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwygAA9fTMD7cAAAA%3D', 580, 300, true); return false;">Бојана Тодић</a></span></td><td style="text-align: right;">1</td><td>-</td><td style="text-align: right;">3</td><td style="text-align: right;">-</td></tr>
+<tr class="oddRow">
+<td class="counter">5.</td><td>1</td><td>М5.03</td><td>Теорија вероватноћа</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyAxk1AKlQEia3AAAA', 580, 300, true); return false;">проф. др Павле Младеновић</a></span></td><td style="text-align: right;">1</td><td>-</td><td style="text-align: right;">10</td><td style="text-align: right;">-</td></tr>
+<tr class="evenRow">
+<td class="counter">6.</td><td>2</td><td>15-М3.03</td><td>Геометрија 3</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwiAEAqiwC9rcAAAA%3D', 580, 300, true); return false;">проф. др Мирјана Ђорић</a></span></td><td style="text-align: right;">2</td><td>-</td><td style="text-align: right;">5</td><td style="text-align: right;">-</td></tr>
+<tr class="oddRow">
+<td class="counter">7.</td><td>2</td><td>М5.05</td><td>Математичка статистика</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyAxn1ABMBG7-3AAAA', 580, 300, true); return false;">др Марко Обрадовић</a></span></td><td style="text-align: right;">1</td><td>-</td><td style="text-align: right;">10</td><td style="text-align: right;">-</td></tr>
+<tr class="evenRow">
+<td class="counter">8.</td><td>2</td><td>РМ04</td><td>Објектно-оријентисано програмирање</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCweAMA4wHY47cAAAA%3D', 580, 300, true); return false;">др Александар Картељ</a></span></td><td style="text-align: right;">2</td><td>-</td><td style="text-align: right;">5</td><td style="text-align: right;">-</td></tr>
+<tr class="oddRow">
+<td class="counter">9.</td><td>2</td><td>М5.06</td><td>Случајни процеси</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwsgIANVyna7cAAAA%3D', 580, 300, true); return false;">др Јелена Јоцковић</a></span></td><td style="text-align: right;">1</td><td>-</td><td style="text-align: right;">9</td><td style="text-align: right;">-</td></tr>
+<tr class="evenRow">
+<td class="counter">10.</td><td>2</td><td>М5.07</td><td>Статистички софтвер 2</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwxgIA84UXDrcAAAA%3D', 580, 300, true); return false;">Благоје Ивановић</a></span></td><td style="text-align: right;">1</td><td>-</td><td style="text-align: right;">3</td><td style="text-align: right;">-</td></tr>
+<tr class="oddRow">
+<td class="counter">11.</td><td>2</td><td>М5.08</td><td>Теорија узорака</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyAxm3AeJmoG63AAAA', 580, 300, true); return false;">др Милан Јовановић</a></span></td><td style="text-align: right;">1</td><td>-</td><td style="text-align: right;">5</td><td style="text-align: right;">-</td></tr>
+<tr class="evenRow">
+<td style="font-weight: bold; text-align: right;" colspan="8">Укупно положено:&nbsp;&nbsp;&nbsp;5 / 65</td><td style="font-weight: bold; text-align: right;">8,00</td></tr>
+<tr class="oddRow">
+<td style="background-color: #FFFFFF; height: 20px; border: none;" colspan="9"></td></tr>
+<tr class="evenRow">
+<td class="caption" style="border: 0px;" colspan="9">2020/2021 - Буџет, 8. октобар 2020. (оверена 6. октобра 2021.)</td></tr>
+<tr class="oddRow">
+<th class="counter">Бр.</th><th>Семестар</th><th>Ознака</th><th>Назив</th><th>Наставник</th><th style="text-align: right;">Бр. уписа</th><th>Датум полагања</th><th style="text-align: right;">ЕСПБ</th><th style="text-align: right;">Оцена</th></tr>
+<tr class="evenRow">
+<td class="counter">1.</td><td>оба</td><td>М2.03</td><td>Анализа 2</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyAxntAD17fQy3AAAA', 580, 300, true); return false;">проф. др Дарко Милинковић</a></span></td><td style="text-align: right;">1</td><td>24.09.2021.</td><td style="text-align: right;">18</td><td style="text-align: right;">7 (65)</td></tr>
+<tr class="oddRow">
+<td class="counter">2.</td><td>1</td><td>М1.04</td><td>Алгебра 1</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwJAEAj5lqobcAAAA%3D', 580, 300, true); return false;">проф. др Марко Радовановић</a></span></td><td style="text-align: right;">1</td><td>27.09.2021.</td><td style="text-align: right;">6</td><td style="text-align: right;">9 (85)</td></tr>
+<tr class="evenRow">
+<td class="counter">3.</td><td>1</td><td>15-М3.02</td><td>Геометрија 2</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwKAMAieixoLcAAAA%3D', 580, 300, true); return false;">проф. др Тијана Шукиловић</a></span></td><td style="text-align: right;">1</td><td>23.09.2021.</td><td style="text-align: right;">6</td><td style="text-align: right;">9 (89)</td></tr>
+<tr class="oddRow">
+<td class="counter">4.</td><td>1</td><td>МС5.01</td><td>Увод у вероватноћу</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwsgIANVyna7cAAAA%3D', 580, 300, true); return false;">др Јелена Јоцковић</a></span></td><td style="text-align: right;">1</td><td>25.09.2021.</td><td style="text-align: right;">5</td><td style="text-align: right;">9 (87)</td></tr>
+<tr class="evenRow">
+<td class="counter">5.</td><td>1</td><td>15-РМ03</td><td>Увод у организацију и архитектуру рачунара 1</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwtAMAeI8KcbcAAAA%3D', 580, 300, true); return false;">др Стефан Мишковић</a></span></td><td style="text-align: right;">1</td><td>21.06.2021.</td><td style="text-align: right;">5</td><td style="text-align: right;">9 (82)</td></tr>
+<tr class="oddRow">
+<td class="counter">6.</td><td>2</td><td>15-М3.03</td><td>Геометрија 3</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwiAEAqiwC9rcAAAA%3D', 580, 300, true); return false;">проф. др Мирјана Ђорић</a></span></td><td style="text-align: right;">1</td><td>-</td><td style="text-align: right;">5</td><td style="text-align: right;">-</td></tr>
+<tr class="evenRow">
+<td class="counter">7.</td><td>2</td><td>РМ04</td><td>Објектно-оријентисано програмирање</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCweAMA4wHY47cAAAA%3D', 580, 300, true); return false;">др Александар Картељ</a></span></td><td style="text-align: right;">1</td><td>-</td><td style="text-align: right;">5</td><td style="text-align: right;">-</td></tr>
+<tr class="oddRow">
+<td class="counter">8.</td><td>2</td><td>М4.01</td><td>Увод у нумеричку математику</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwxAEACOUFjrcAAAA%3D', 580, 300, true); return false;">др Зорица Дражић</a></span></td><td style="text-align: right;">1</td><td>29.09.2021.</td><td style="text-align: right;">5</td><td style="text-align: right;">6 (51)</td></tr>
+<tr class="evenRow">
+<td class="counter">9.</td><td>2</td><td>МС5.02</td><td>Увод у статистику</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwTAUAMP6zgrcAAAA%3D', 580, 300, true); return false;">проф. др Бојана Милошевић</a></span></td><td style="text-align: right;">1</td><td>28.09.2021.</td><td style="text-align: right;">5</td><td style="text-align: right;">7 (68)</td></tr>
+<tr class="oddRow">
+<td style="font-weight: bold; text-align: right;" colspan="8">Укупно положено:&nbsp;&nbsp;&nbsp;50 / 60</td><td style="font-weight: bold; text-align: right;">8,00</td></tr>
+<tr class="evenRow">
+<td style="background-color: #FFFFFF; height: 20px; border: none;" colspan="9"></td></tr>
+<tr class="oddRow">
+<td class="caption" style="border: 0px;" colspan="9">2019/2020 - Буџет, 1. јул 2019. (оверена 8. октобра 2020.)</td></tr>
+<tr class="evenRow">
+<th class="counter">Бр.</th><th>Семестар</th><th>Ознака</th><th>Назив</th><th>Наставник</th><th style="text-align: right;">Бр. уписа</th><th>Датум полагања</th><th style="text-align: right;">ЕСПБ</th><th style="text-align: right;">Оцена</th></tr>
+<tr class="oddRow">
+<td class="counter">1.</td><td>оба</td><td>15-М2.01</td><td>Анализа 1</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwZAMAKyG22LcAAAA%3D', 580, 300, true); return false;">Јована Николић</a></span></td><td style="text-align: right;">1</td><td>22.06.2020.</td><td style="text-align: right;">20</td><td style="text-align: right;">10 (92)</td></tr>
+<tr class="evenRow">
+<td class="counter">2.</td><td>оба</td><td>15-М1.01</td><td>Линеарна алгебра</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwVAIAY1APK7cAAAA%3D', 580, 300, true); return false;">проф. др Горан Ђанковић</a></span></td><td style="text-align: right;">1</td><td>03.09.2020.</td><td style="text-align: right;">13</td><td style="text-align: right;">10 (91)</td></tr>
+<tr class="oddRow">
+<td class="counter">3.</td><td>1</td><td>РМ01</td><td>Програмирање 1</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwqAEABhzb0LcAAAA%3D', 580, 300, true); return false;">др Јована Ковачевић</a></span></td><td style="text-align: right;">1</td><td>21.01.2020.</td><td style="text-align: right;">6</td><td style="text-align: right;">9 (81)</td></tr>
+<tr class="evenRow">
+<td class="counter">4.</td><td>1</td><td>С2.01</td><td>Страни језик</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwuAAAchxnc7cAAAA%3D', 580, 300, true); return false;">Ирена Павловић</a></span></td><td style="text-align: right;">1</td><td>23.01.2020.</td><td style="text-align: right;">4</td><td style="text-align: right;">10 (95)</td></tr>
+<tr class="oddRow">
+<td class="counter">5.</td><td>1</td><td>М1.02</td><td>Увод у математичку логику</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwqAAAKn3VPrcAAAA%3D', 580, 300, true); return false;">др Славко Моцоња</a></span></td><td style="text-align: right;">1</td><td>01.02.2020.</td><td style="text-align: right;">5</td><td style="text-align: right;">10 (100)</td></tr>
+<tr class="evenRow">
+<td class="counter">6.</td><td>2</td><td>15-М3.01</td><td>Геометрија 1</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCw1AMAVvVswrcAAAA%3D', 580, 300, true); return false;">др Иван Димитријевић</a></span></td><td style="text-align: right;">1</td><td>07.09.2020.</td><td style="text-align: right;">6</td><td style="text-align: right;">10 (94)</td></tr>
+<tr class="oddRow">
+<td class="counter">7.</td><td>2</td><td>РМ02</td><td>Програмирање 2</td><td><span><a href="javascript: ;" onclick="edit('/StudInfo/scripts/podaciONastavniku?nastavnik=H4sIAAAAAAAAAFvzloG1uIhBJjexJE2vuKQ0JTMvLV8vJUnPL7G4JLEsLzPbM-WF4CH76Bf1zEwMTD4M3JkpbonZpTklqSWJJQzCPlmJZYn6OYl56fqeeSWp6alF1j4MzJkp6YUMdQyMFQVAswVBSvRASvSgSoQeLVjyvbHdgomB0ZOBtSwxpzS1oohBAKHOrzQ3KbWobc1UWe4pD7qZGBgqChgYGBiLQYYyMzCwRAMAhxFv_rcAAAA%3D', 580, 300, true); return false;">др Иван Чукић</a></span></td><td style="text-align: right;">1</td><td>26.08.2020.</td><td style="text-align: right;">6</td><td style="text-align: right;">10 (92)</td></tr>
+<tr class="evenRow">
+<td style="font-weight: bold; text-align: right;" colspan="8">Укупно положено:&nbsp;&nbsp;&nbsp;60 / 60</td><td style="font-weight: bold; text-align: right;">9,86</td></tr>
+</tbody>
+</table>
+</span><a name="dno" id="dno"></a><div id="quick-bottom" class="non-printable"><hr id="quick-bottom-hr"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/uputstvo?skipOutputProcessing=skipOutputProcessing#UpisaneGodine" target="_blank">Упутство</a></div><div id="copyright-msg" class="non-printable"><hr>
+												Информациони систем СтудИнфо, верзија 2022-12
+												© 2005-2023 Универзитет у Београду - Математички факултет
+											</div></td><td id="quick" class="non-printable"><ul><li><div class="li-content"><a href="https://hypatia.matf.bg.ac.rs:10333/StudInfo/scripts/studenti/uputstvo?skipOutputProcessing=skipOutputProcessing#UpisaneGodine" target="_blank">Упутство</a></div></li></ul></td></tr></tbody></table>
+
+
+<table class="non-printable invisible" style="position: absolute; background-color: rgb(255, 255, 255); padding: 0px; width: 1px; height: 1px; opacity: 0.8;" border="1"><tbody><tr><td style="border: 1px dashed rgb(204, 204, 204); text-align: center; vertical-align: middle; padding: 0px;">					<img src="upisanegodine_files/export.png" alt="Извези податке" title="Извези податке" style="border: medium none; cursor: pointer; margin: 3px;">				</td></tr></tbody></table><table class="non-printable" style="position: absolute; background-color: rgb(255, 255, 255); padding: 0px; width: 1px; height: 1px; opacity: 0.8; left: 982px; top: 133px;" border="1"><tbody><tr><td style="border: 1px dashed rgb(204, 204, 204); text-align: center; vertical-align: middle; padding: 0px;">					<img src="upisanegodine_files/export.png" alt="Извези податке" title="Извези податке" style="border: medium none; cursor: pointer; margin: 3px;">				</td></tr></tbody></table></body></html>

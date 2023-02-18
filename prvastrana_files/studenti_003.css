@@ -1,0 +1,91 @@
+/*****************************************************************************/
+/*GENERAL STYLES*/
+caption {
+	background-color: #FFFFE6;
+}
+thead tr th, table.list tr th,
+.th-bg {
+	background-color: #727B64;
+}
+a,
+a:visited {
+	color: #003399;
+}
+/** LEFT SIDE **/
+td#left, div.menu-separator {
+	background-color: #C8CFAF;
+}
+/** MIDDLE PART **/
+td#cont {
+	background-color: #FFFFFF;
+}
+/*****************************************************************************/
+/* APPLICATION REQUIRED STYLES, DO NOT DELETE */
+/** LISTING TABLES **/
+table.list caption,
+.caption {
+	background-color: #FFFFE6;
+}
+table.list thead tr,
+table.list tbody tr td.header {
+	background-color: #727B64;
+}
+table.list thead th {
+	padding: 3px 5px;
+	text-align: left;
+}
+table.list tbody td,
+table.list tbody td,
+table.list thead th,
+table.list tbody th {
+	border-bottom: 1px solid #C6E59C;
+}
+
+/* Ova boja bi trebalo da bude ista kao highlight boje u common */
+table.list tbody tr.highlightedRow {
+	background-color: #BECCA3;
+}
+
+/* MENU */
+td#menu table {
+	width: 100%;
+	background-color: #FFFFFF;
+}
+
+td#menu table tbody tr td a,
+td#menu table tbody tr td a:visited,
+div.submenu table tr td a,
+div.submenu table tr td a:visited {
+	color: #3A5131;
+}
+
+td#menu table tbody tr td a:hover,
+div.submenu table tr td a:hover {
+	color: #738550;
+}
+
+div.menu-separator {
+	height: 11px;
+}
+
+div.submenu table tr td {
+	color: #000033;
+}
+
+/************************************/
+
+table.search {
+	border: 2px groove #7a7f63;
+	background-color: #e5e6d7;
+}
+table.search th,
+table.search td {
+	padding: 2px 5px;
+	font-size: 10px;
+	vertical-align: middle;
+	text-align: left;
+	border-bottom: 1px dashed #c8c8c8;
+}
+table.search label {
+	font-weight: bold;
+}

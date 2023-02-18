@@ -1,0 +1,41 @@
+/*****************************************************************************/
+.non-printable {
+}
+.printable-only {
+	display: none;
+}
+
+/* Image width adjustment */
+
+img.full-width, img.large-picture-full, img.large-photo-full {
+	width: auto;
+}
+
+img.large-picture-resized, img.large-photo-resized {
+	border: 1px dashed blue;
+	cursor: pointer;
+}
+img.large-picture-full, img.large-photo-full {
+	border: none;
+	cursor: pointer;
+}
+
+/* IE overrides */
+* html span.outer-img-span img.full-width, * html span.outer-img-span img.large-picture-full {
+	width: expression('100%');
+}
+
+img.large-photo-resized {
+	width: 150px;
+	height: 200px;
+}
+img.large-photo-full {
+	width: auto;
+	height: auto;
+}
+
+/* Boja je ista kao za object-edit */
+img.small-photo, img.photo-with-border {
+	border: 1px solid #E8E9F4;
+	max-width: 150px;
+}

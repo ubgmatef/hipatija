@@ -1,0 +1,546 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 12px;
+	background-color: #FFFFFF;
+}
+pre {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+table {
+	border-collapse: collapse;
+	font-size: 12px;
+}
+caption {
+	text-align: left;
+	padding: 3px 5px;
+	margin: 0;
+	font-weight: bold;
+	background-repeat: repeat-x;
+	background-position: left bottom;	
+	font-size: 10px;
+}
+thead th {
+	padding: 3px 5px;
+	text-align: left;
+}
+td,
+th {
+	padding: 0;
+	vertical-align: top;
+}
+ul {
+	list-style-type: circle;
+}
+a,
+a:visited {
+	text-decoration: none;
+	font-weight: bold;
+
+}
+img {
+	border: none;
+}
+textarea {
+	width: 200px;
+	height: 100px;
+}
+textarea.richText {
+	width: 400px;
+	height: 200px;
+}
+h1 {
+	font-size: 18px;
+}
+h2 {
+	font-size: 16px;
+	font-style: italic;
+}
+input, select {
+	height: 20px;
+	font-size: 11px;
+	vertical-align: middle;
+}
+/** LEFT SIDE **/
+td#left {
+	width: 150px;
+	vertical-align: top;
+}
+td#left table#left-table {
+	width: 100%;
+	height: 100%;
+}
+td#logo {
+	text-align: center;
+	vertical-align: middle;
+	padding: 10px 0 20px 0;
+	height: 150px;
+}
+td#logo div.logo {
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	vertical-align: middle;
+}
+td#db-message {
+	background-color: red;
+	color: white;
+	text-align: center;
+	padding: 5px 0px 5px 0px;
+}
+td#left-footer {
+	height: 100%;
+	text-align: center;
+	vertical-align: bottom;
+	padding-top: 4px;
+	padding-bottom: 8px;
+	font-size: 10px;
+	font-weight: bold;
+}
+div#copyright-msg {
+	padding-top: 20px;
+	height: 20px;
+	font-size: 9px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+}
+hr#quick-bottom-hr {
+	border-top: none;
+	border-left: none;
+	border-bottom: 1px solid #A0A0A0;
+	border-right: none; 
+	color: white;
+}
+/*
+img#grb {
+	width: 130px;
+}
+*/
+td#cont {
+	width: 850px;
+	padding: 10px;
+	vertical-align: top;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+/** RIGHT SIDE **/
+td#quick ul {
+	padding-left: 30px;
+}
+
+td#quick ul li {
+	/* jedno ../ vise zbog cache-version u putanji */
+	list-style-image: url(../../../images/bullet.png);
+	color: #888888;
+}
+
+td#quick ul li div.li-content {
+	color: black;
+	font-size: 10px;
+	margin-left: -1px;
+}
+
+td#quick ul li.no-list {
+	list-style: none;
+	list-style-image: none;
+}
+
+td#quick {
+	padding-top: 50px;
+	width: 200px;
+	vertical-align: top;
+	border-left: 1px dotted;
+}
+td#quick a,
+td#quick a:visited {
+	display: block;
+	font-weight: normal;
+	padding: 0;
+}
+td#quick hr {
+	margin-left: -15px;
+	margin-top: 12px;
+	margin-bottom: 10px;
+}
+/*****************************************************************************/
+/* APPLICATION REQUIRED STYLES, DO NOT DELETE */
+.right {
+	text-align: right;
+}
+
+/**INPUT FIELDS**/
+input.very-small {
+	width: 45px;
+}
+input.small {
+	width: 90px;
+}
+input.medium {
+	width: 120px;
+}
+input.large {
+	width: 150px;
+}
+input.x-large {
+	width: 200px;
+}
+input.date {
+	width: 120px;
+}
+input.file {
+/*	width: 150px;*/
+}
+
+/* form filed error class */
+input.error,
+select.error,
+textarea.error {
+	background-color: #FFC7B9;
+}
+
+/** LAYOUT TABLE **/
+table.layout td,
+table.layout th {
+	padding: 10px;
+	text-align: justify;
+}
+div#error-message {
+	border: 1px solid #FF0000;
+}
+/** LISTING TABLES **/
+table.list {
+	font-size: 10px;
+}
+table.list caption {
+	text-align: left;
+	padding: 3px 5px;
+	margin: 0;
+	font-weight: bold;
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	background-size: auto 100%;
+}
+.caption {
+	border: none;
+	height: 20px;
+	font-size: 10px;
+	text-align: left;
+	padding: 3px 5px;
+	margin: 0;
+	font-weight: bold;
+	background-repeat: repeat-x;
+	background-position: left bottom;	
+}
+table.list tbody tr.caption td, table.list tbody tr td.caption {
+	border-bottom: none;
+}
+
+table.list thead th,
+table.list tbody tr td.header {
+	padding: 3px 5px;
+	text-align: left;
+	font-weight: bold;
+}
+table.list tbody tr td.header {
+	border: none;
+}
+
+table.list tr.defaultBorderBottom td,
+table.list tr.defaultBorderBottom td {
+	border-bottom: inherit;
+}
+
+table.list tbody tr:hover {
+	cursor: default;
+}
+table.list tbody td,
+table.list tbody th {
+	padding: 1px 5px;
+	text-align: left;
+	vertical-align: middle;
+	font-size: 10px;
+}
+table.list tfoot tr td {
+	font-size: 10px;
+	padding: 3px 0;
+}
+
+/*****************************************************************************/
+/** FORM-TABLE 
+ ** OBJECT-VIEW
+ ** OBJECT-EDIT **/
+td.separator {
+	height: 10px;
+}
+table.form-table {
+	font-size: 10px;
+	border-collapse: collapse;
+}
+table.object-edit {
+	border: 1px solid #E8E9F4;
+	font-size: 10px;
+	border-collapse: collapse;
+}
+table.form-table th,
+table.object-edit th {
+	text-align: right;
+	vertical-align: top;
+	padding: 3px 5px;
+	font-size: 10px;
+/*	border: 1px dotted;*/
+}
+.head-text {
+	font-weight: bold;
+	font-size: 10px;
+}
+table.form-table td,
+table.object-edit td {
+	vertical-align: top;
+	padding: 0 5px 1px;
+	font-size: 12px;
+/*	border: 1px dotted;*/
+}
+table.object-edit caption {
+	background-size: auto 100%;
+}
+table.form-table td.submit-reset {
+	text-align: right;
+	padding-top: 10px;
+}
+div.compact-separator {
+	padding: 0 5px;
+	display: inline;
+}
+.swap,
+.swap:visited {
+	padding: 0px;
+}
+/*****************************************************************************/
+/* REPORT */
+table.rep-main {
+	border: thin solid;
+	width: 800px;
+	border-collapse: collapse;
+}
+table.rep-main td
+table.rep-main th {
+	padding: 5px;
+}
+table.rep-main th {
+	text-align: left;
+}
+table.rep-main th.center {
+	text-align: center;
+}
+table.rep-main th.right {
+	text-align: right;
+}
+
+table.rep-main th.rep-header {
+	background-color: #CCCCCC;	
+}
+/*****************************************************************************/
+/* MENU */
+/*
+ * zameniti apsolutne linkove do slika
+ * postviti stilove sa URL-ovima za slike u transform.xsl
+ * i povezati sa {$context} promenljivom
+ */
+
+td#menu table {
+	width: 100%;
+	background-color: #FFFFFF;
+}
+td#menu table tbody tr td {
+	vertical-align: middle;
+	padding: 0;
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	padding-left: 10px;
+}
+td#menu table tbody tr td a,
+td#menu table tbody tr td a:visited {
+	width: 100%;
+	display: block;
+	padding: 5px 0; 
+	font-weight: bold;
+	border-bottom: none;
+}
+td#menu table tbody tr td a:hover {
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+div.submenu {
+	position: absolute;
+	display: none;
+	z-index: 1;
+	background-color: #FFFFFF;
+}
+div.submenu table tr td {
+	background-repeat: repeat-x;
+	background-position: left top;
+	text-decoration: none;
+}
+div.submenu table tr td a,
+div.submenu table tr td a:visited {
+	display: block;
+	text-decoration: none;
+	padding: 5px 10px;
+	border-bottom: none;
+}
+div.submenu table tr td a:hover {
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+/** COMMON **/
+a.naglasenLink, input.naglasenLink.submitLink{
+	color: #D51339;
+}
+td#cont a:hover {
+	color: #538BFF;
+}
+td#quick a:hover {
+	color: #FF0033;	
+}
+div#generics {
+	border: 1px solid;
+	margin: 5px;
+}
+/****/
+table.bgcolor thead th,
+table.bgcolor tbody tr td.header {
+	padding: 3px 5px;
+	text-align: left;
+	font-weight: bold;
+}
+table.bgcolor td,
+table.bgcolor th {
+	font-size: 10px;
+	padding: 1px 5px;
+	text-align: left;
+	vertical-align: middle;
+}
+/************************************/
+table.tabs tr td {
+	padding: 5px 5px 1px 5px;
+/*	border: 1px solid;*/
+	border-bottom: none;
+	vertical-align: bottom;
+}
+.compact {
+	padding: 1px;
+}
+table.compact {
+	font-size: 10px;
+}
+table.compact th,
+table.compact td {
+	padding: 1px;
+	text-align: justify;
+	border-bottom: 1px solid;
+}
+/************************************/
+div#quick-bottom {
+	margin-top: 10px;
+}
+div#quick-bottom a {
+	font-size: 10px;
+	padding: 3px;
+	color: #5450ad;
+}
+div#quick-bottom a:hover {
+	color: #5450ad;
+	text-decoration: underline;
+}
+
+td#quick div.quick-header {
+	font-weight: bold;
+	padding-right: 5px;
+	padding-bottom: 3px;
+}
+
+div#quick-bottom div.quick-header {
+	font-weight: bold;
+	font-size: 11px;
+	text-align: left;
+	padding-left: 3px;
+	padding-top: 5px;
+	padding-bottom: 3px;
+}
+
+div.page-date-and-time {
+	display: none;
+}
+/************************************/
+table.no-border {
+	border: none;
+}
+table.no-border tbody td,
+table.no-border tbody th {
+	border: none;
+}
+
+/*****************************************************************************/
+/* SUBMIT LINKS */
+input.submitLink::-moz-focus-inner
+{     
+	padding: 0 !important;     
+	border: 0 none !important; 
+} 
+
+input.submitlink {
+    background: none;
+    cursor: pointer;
+	padding: 0 !important;     
+	border: 0 none !important; 
+	border-width: 0 !important;
+	margin: 0;
+    color: #003399;
+    text-decoration: none;
+	font-weight: bold;
+	display: inline;
+	vertical-align: top;
+	height: auto;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	white-space: normal;
+	text-align: left;
+}
+
+input.submitlink:hover {
+    color: #538bff;
+}
+
+table .submitLink {
+	font-size: 12px;
+}
+
+table.list tbody td .submitLink, table.list tbody th .submitLink {
+	font-size: 10px;
+}
+
+td#quick ul li div.li-content .submitLink {
+	font-size: 10px;
+	font-weight: normal;
+}
+
+td#quick .submitLink:hover {
+	color: #FF0033;	
+}
+
+div#quick-bottom .submitLink {
+	color: #5450AD;
+	font-size: 10px;
+	font-weight: bold;
+	vertical-align: bottom;
+}
+
+div#quick-bottom .submitLink:hover {
+	text-decoration: underline;
+}
+
+div#quick-bottom .postParamLink {
+	padding: 3px;
+}

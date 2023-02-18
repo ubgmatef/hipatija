@@ -1,0 +1,31 @@
+div#allContents {
+	display: table;
+}
+div#help {
+	position: relative;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 20px;
+}
+/* divove prikazujemo kao header i footer tabele da bi im zamenili redosled */
+div#opisTableRow {
+	display: table-footer-group;
+}
+div#loginTableRow {
+	display: table-header-group;
+}
+div#tabela {
+	position: relative;
+	margin: auto;
+	margin-top: 5px;
+}
+table.login label, table.login thead th, table.login button {
+	font-size: 15px;
+}
+table.login input {
+	height: 25px;
+	font-size: 15px;
+}
+div#app-messages {
+	padding: 0 0 40px 0;
+}

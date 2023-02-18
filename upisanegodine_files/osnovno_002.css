@@ -1,0 +1,27 @@
+/*****************************************************************************/
+.non-printable {
+	display: none;
+}
+.printable-only {
+}
+
+/* Large images and photos are always to be fitted to visible width */
+
+/* "Normal" (non-IE) browsers */
+img.large-picture-resized, img.large-photo-resized,
+img.large-picture-full, img.large-photo-full {
+	width: 100%;
+}
+
+/* IE */
+* html span.outer-img-span img.large-picture-resized, * html span.outer-img-span img.large-photo-resized,
+* html span.outer-img-span img.large-picture-full, * html span.outer-img-span img.large-photo-full {
+	width: 1px;
+	width: expression(width < parentNode.clientWidth ? parentNode.clientWidth : true);
+}
+
+/* Boja je ista kao za object-edit */
+img.small-photo, img.photo-with-border {
+	border: 1px solid black;
+	max-width: 150px;
+}

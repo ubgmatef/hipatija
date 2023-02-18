@@ -1,0 +1,76 @@
+body {
+	font-size: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+div#help {
+	position: absolute;
+	width: 40%;
+	padding: 2px;
+	text-align: center;
+	font-size: 15px;
+	background-color: #D2E0BC;
+	border: solid 1px #004A36;
+	margin: 50px 30% 30px 28%;
+}
+div#tabela {
+/*	position: absolute;
+	width: 40%;
+	margin-top: 30%;
+	display: inline-block; 
+	margin: top: 30%; */
+	text-align: center;
+}
+div#loginTableRow {
+	position: absolute;
+	width: 40%;
+	padding: 2px;
+	text-align: center;
+	font-size: 15px;
+	margin: 30% 30% 30px 28%;
+	
+}
+table.login {
+	width: 200px;
+	border-collapse: collapse;
+}
+table.login label {
+	font-size: 10px;
+	font-weight: bold;
+	margin-right: 8px;
+}
+table.login thead {
+	font-size: 12px;
+	color: #FFFFFF;
+}
+table.login thead th {
+	text-align: left;
+	padding: 5px 10px;
+}
+table.login tbody {
+	text-align: right;
+}
+table.login tfoot td {
+	text-align: center;
+	padding-right: 8px;
+}
+input {
+	height: 20px;
+	width: 180px;
+	margin: 0 10px 3px 10px;
+}
+button {
+	font-size: 11px;
+}
+input.error {
+	background-color: #FFC7B9;
+}
+a, a:visited {
+	text-decoration: none;
+	font-weight: bold;
+}
+div#app-messages {
+	padding: 15px 50px;
+	margin-bottom: -50;
+}

@@ -1,0 +1,11 @@
+/*****************************************************************************/
+table.list tbody tr.oddRow {
+	background-color: #E7EEDB;
+}
+table.list tbody tr.evenRow {
+	background-color: white;
+}
+
+/* Ova boja bi trebalo da bude ista kao highlight boja u screen */
+.highlighted-fg { color: #BECCA3; }
+.highlighted-bg { background-color: #BECCA3; }
